@@ -64,6 +64,7 @@ h3 {
 pre {
     color: #000;
     white-space: pre-wrap;
+    word-break: break-all;
     font-family: code;
     font-size: 0.9rem;
 }
@@ -190,4 +191,27 @@ body::-webkit-scrollbar-thumb {
     background-color: rgba(55, 45, 87, 0.5);
     height: 10px;
     border-radius: 10px;
+}
+
+.cont-foco {
+    width: 200px;
+    margin: auto;
+    display: block;
+}
+
+.cont-foco button {
+    margin-bottom: 2%;
+}
+
+button {
+    background-color: green;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    transition: 1s;
+}
+
+button:hover {
+    background-color: rgb(6, 54, 6);
 }
