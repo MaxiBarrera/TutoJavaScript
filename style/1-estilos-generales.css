@@ -37,7 +37,7 @@ main {
 }
 
 p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
     padding: 8px 0;
 }
@@ -94,13 +94,14 @@ pre {
     position: fixed;
     z-index: 1;
     border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px #000;
 }
 
 .aDerecha {
     background-color: #fff;
     color: #000;
     width: 100%;
-    padding: 20px 40px;
+    padding: 20px 15px 20px 40px;
     position: absolute;
     right: 0;
     top: 0;
@@ -111,7 +112,7 @@ pre {
     background-color: #000;
     position: fixed;
     z-index: 1;
-    top: 39px;
+    top: 38px;
     overflow-y: scroll;
 }
 
@@ -136,10 +137,9 @@ pre {
 .fondo-texto {
     background-color: var(--violeta);
     color: #fff;
-    padding: 25px;
+    padding: 15px;
     border-radius: 10px;
-    font-weight: 400;
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 10px #000;
 }
 
 .borde-caja {
@@ -147,7 +147,7 @@ pre {
     padding: 20px 10px 10px 10px;
     border-radius: 10px;
     color: #fff;
-    box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 10px #000;
 }
 
 .fondo-caja {
