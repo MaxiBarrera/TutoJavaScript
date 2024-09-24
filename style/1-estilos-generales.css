@@ -54,7 +54,8 @@ h1 {
 }
 
 h2 {
-    padding-bottom: 15px;
+    font-size: 1.3rem;
+    margin: 15px 0;
 }
 
 h3 {
@@ -194,7 +195,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .cont-foco {
-    width: 200px;
+    width: 186px;
     margin: auto;
     display: block;
 }
