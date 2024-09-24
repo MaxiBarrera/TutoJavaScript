@@ -11,6 +11,10 @@
     color: crimson;
 }
 
+.verde {
+    color: rgb(4, 107, 4);
+}
+
 @font-face {
     font-family: code;
     src: url(../fonts/RobotoMono-SemiBold.ttf);
@@ -40,6 +44,7 @@ p {
     font-size: 0.9rem;
     font-weight: 600;
     padding: 8px 0;
+    line-height: 18px;
 }
 hr {
     border: none;
@@ -56,6 +61,7 @@ h1 {
 h2 {
     font-size: 1.3rem;
     margin: 15px 0;
+    line-height: 24px;
 }
 
 h3 {
@@ -176,6 +182,33 @@ pre {
     box-shadow: 0 0 4px #fff;
     border: 2px solid rgba(0, 0, 0, 0.4);
 }
+.caja-antProx {
+    overflow: hidden;
+    position: relative;
+    height: 70px;
+}
+.boton-prox {
+    display: inline-block;
+    padding: 5px 30px;
+    background-color: var(--rosa);
+    color: #000;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: 1s;
+    border: 2px solid var(--rosa);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.boton-prox:hover {
+    box-shadow: 0 0 4px #fff;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+
 body::-webkit-scrollbar {
     width: 10px;
 }
