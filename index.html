@@ -68,6 +68,107 @@ document.getElementById(<span class="rojo">"demo"</span>).innerHTML = <span clas
                     </div>
                     <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html_quotes" target="_blank" class="boton-vinculo">Check!</a>
                 </div>
+
+                <hr />
+
+                <h2>JavaScript puede cambiar los valores de los atributos HTML</h2>
+
+                <p>En este ejemplo, JavaScript cambia el valor del atributo <span class="rojo">src</span> (fuente) de una etiqueta <span class="rojo">&lt;img/></span>:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <div class="cont-foco">
+                            <button onclick="document.getElementById('myImage').src='img/foco-prendido.gif'">On</button>
+                            <img id="myImage" src="img/foco-apagado.gif" style="width: 100px" />
+                            <button onclick="document.getElementById('myImage').src='img/foco-apagado.gif'">Off</button>
+                        </div>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>JavaScript puede cambiar los estilos HTML (CSS)</h2>
+
+                <p>Cambiar el estilo de un elemento HTML es una variante de cambiar un atributo HTML:</p>
+
+                <br />
+
+                <button onclick="document.getElementById('fuente').style.fontSize = '35px'">Agrandar párrafo</button>
+
+                <p id="fuente">JavaScript puede cambiar el tamaño de una fuente HTML</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+                    <div class="fondo-caja">
+                        <pre>
+document.getElementById(<span class="rojo">"demo"</span>).style.fontSize = <span class="rojo">"35px"</span>;                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>JavaScript puede ocultar elementos HTML</h2>
+
+                <p>Se pueden ocultar elementos HTML cambiando el estilo <span class="rojo">display</span>:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+                    <div class="fondo-caja">
+                        <pre>
+document.getElementById(<span class="rojo">"demo"</span>).style.display = <span class="rojo">"none"</span>;                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_hide" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>JavaScript puede mostrar elementos HTML</h2>
+
+                <p>También es posible mostrar elementos HTML ocultos cambiando el estilo <span class="rojo">display</span>:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+                    <div class="fondo-caja">
+                        <pre>
+document.getElementById(<span class="rojo">"demo"</span>).style.display = <span class="rojo">"block"</span>;                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_show" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <button onclick="document.getElementById('oculto').style.display = 'none'">Oculte el texto</button>
+
+                <button onclick="document.getElementById('oculto').style.display = 'block'">Muestre el texto</button>
+
+                <br />
+
+                <p id="oculto">JavaScript puede ocultar y mostrar elementos HTML.</p>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h3>¿Sabías?</h3>
+                    <p>JavaScript y Java son lenguajes completamente diferentes, tanto en concepto como en diseño.</p>
+                    <p>JavaScript fue inventado por Brendan Eich en 1995 y se convirtió en un estándar ECMA en 1997.</p>
+                    <p>ECMA-262 es el nombre oficial del estándar. ECMAScript es el nombre oficial del lenguaje.</p>
+                </div>
             </aside>
         </main>
     </body>
