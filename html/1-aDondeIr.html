@@ -8,6 +8,12 @@
         <link rel="shortcut icon" href="../img/javaScript.png" type="image/x-icon" />
         <link rel="stylesheet" href="../style/1-estilos-generales.css" />
         <title>A donde ir</title>
+
+        <script>
+            function myFunction() {
+                document.getElementById("demo2").innerHTML = "Ahora soy un párrafo distinto";
+            }
+        </script>
     </head>
 
     <body>
@@ -49,6 +55,139 @@ document.getElementById(<span class="verde">"demo"</span>).innerHTML = <span cla
 
                     <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto" target="_blank" class="boton-vinculo">Check!</a>
                 </div>
+
+                <br />
+
+                <p id="demo"></p>
+                <script>
+                    document.getElementById("demo").innerHTML = "Mi primer Java Script";
+                </script>
+
+                <script>
+                    document.getElementById("demo").style.color = "purple";
+                </script>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <p>Los ejemplos antiguos de JavaScript pueden utilizar un atributo de tipo: &lt;script type="text/javascript">.</p>
+
+                    <p>El atributo de tipo no es obligatorio. JavaScript es el lenguaje de programación predeterminado en HTM</p>
+                </div>
+
+                <hr />
+
+                <h2>Funciones y eventos de JavaScript</h2>
+
+                <p>Un JavaScript <span class="rojo">function</span> es un bloque de código JavaScript que puede ejecutarse cuando se lo "llama".</p>
+
+                <p>Por ejemplo, se puede llamar a una función cuando ocurre un evento , como cuando el usuario hace clic en un botón.</p>
+
+                <br />
+
+                <p class="fondo-texto">Aprenderá mucho más sobre funciones y eventos en capítulos posteriores.</p>
+
+                <hr />
+
+                <h2>JavaScript en &lt;head&gt; o &lt;body&gt;</h2>
+
+                <p>Puede colocar cualquier cantidad de scripts en un documento HTML.</p>
+
+                <p>Los scripts se pueden colocar en la sección <span class="rojo">&lt;body&gt;</span>, o en la sección <span class="rojo">&lt;head&gt;</span> de una página HTML, o en ambas.</p>
+
+                <hr />
+
+                <h2>JavaScript en &lt;head></h2>
+
+                <p>En este ejemplo, <span class="rojo">function</span> se coloca un JavaScript en la sección <span class="rojo">&lt;head></span> de una página HTML.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+                    <div class="fondo-caja">
+                        <pre>
+&lt;<span class="rojo">!DOCTYPE</span> <span class="purpura">html</span>>
+&lt;<span class="rojo">html</span>>
+&lt;<span class="rojo">head</span>>
+&lt;<span class="rojo">script</span>>
+<span class="purpura">function</span> myFunction() {
+  document.getElementById(<span class="verde">"demo"</span> ).innerHTML = <span class="verde">"Paragraph changed."</span> ;
+}
+&lt;<span class="rojo">/scrip</span>t>
+&lt;<span class="rojo">/head</span>>
+&lt;<span class="rojo">body</span>>
+
+&lt;<span class="rojo">h2</span>>Demo JavaScript in Head&lt;<span class="rojo">/h2</span>>
+
+&lt;<span class="rojo">p</span> <span class="purpura">id</span>=<span class="verde">"demo"</span> >A Paragraph&lt;<span class="rojo">/p</span>>
+&lt;<span class="rojo">button</span> <span class="purpura">type</span>=<span class="verde">"button"</span>  <span class="purpura">onclick</span>=<span class="verde">"myFunction()"</span>>Try it&lt;<span class="rojo">/button</span>>
+
+&lt;<span class="rojo">/body</span>>
+&lt;<span class="rojo">/html</span>>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_head" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p id="demo2">Soy un párrafo.</p>
+                <button type="button" onclick="myFunction()">Pruébalo</button>
+
+                <hr />
+
+                <h2>JavaScript en &lt;body></h2>
+
+                <p>En este ejemplo, <span class="rojo">function</span> se coloca un JavaScript en la sección <span class="rojo">&lt;body></span> de una página HTML.</p>
+
+                <p>La función se invoca (llama) cuando se hace clic en un botón:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+                    <div class="fondo-caja">
+                        <pre>
+&lt;<span class="rojo">!DOCTYPE</span> <span class="purpura">html</span>>
+&lt;<span class="rojo">html</span>>
+&lt;<span class="rojo">body</span>>
+
+&lt;<span class="rojo">h2</span>>Demo JavaScript in Body&lt;<span class="rojo">/h2</span>>
+
+&lt;<span class="rojo">p</span> <span class="purpura">id</span>=<span class="verde">"demo"</span>>A Paragraph&lt;<span class="rojo">/p</span>>
+
+&lt;<span class="rojo">button</span> <span class="purpura">type</span>=<span class="verde">"button"</span> <span class="purpura">onclick</span>=<span class="verde">"myFunction()"</span>>Try it&lt;<span class="rojo">/button</span>>
+
+&lt;<span class="rojo">script</span>>
+<span class="purpura">function</span> myFunction() {
+  document.getElementById(<span class="verde">"demo"</span>).innerHTML = <span class="verde">"Paragraph changed."</span>;
+}
+&lt;<span class="rojo">/script</span>>
+
+&lt;<span class="rojo">/body</span>>
+&lt;<span class="rojo">/html</span>>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_body" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p id="demo3">Soy otro párrafo</p>
+
+                <button type="button" onclick="myFunction1()">Pruébalo</button>
+                <script>
+                    function myFunction1() {
+                        document.getElementById("demo3").innerHTML = "Ahora soy otro párrafo distinto";
+                    }
+                </script>
+
+                <br /><br />
+
+                <p class="fondo-texto">Colocar los scripts en la parte inferior del elemento &lt;body> mejora la velocidad de visualización, porque la interpretación de los scripts ralentiza la visualización.</p>
+
+                <hr />
             </aside>
         </main>
     </body>
