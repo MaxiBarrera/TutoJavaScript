@@ -75,6 +75,7 @@ h3 {
 
 pre {
     color: #000;
+    word-break: break-all;
     white-space: pre-wrap;
     font-family: code;
     font-size: 0.8rem;
