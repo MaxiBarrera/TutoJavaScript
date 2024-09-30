@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
         <link rel="shortcut icon" href="../img/javaScript.png" type="image/x-icon" />
         <link rel="stylesheet" href="../style/1-estilos-generales.css" />
         <title>A donde ir</title>
@@ -188,7 +187,154 @@ document.getElementById(<span class="verde">"demo"</span>).innerHTML = <span cla
                 <p class="fondo-texto">Colocar los scripts en la parte inferior del elemento &lt;body> mejora la velocidad de visualización, porque la interpretación de los scripts ralentiza la visualización.</p>
 
                 <hr />
+
+                <h2>JavaScript externo</h2>
+
+                <p>Los scripts también se pueden colocar en archivos externos:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Archivo externo: myScript.js</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">function</span> myFunction() {
+  document.getElementById(<span class="verde">"demo"</span> ).innerHTML = <span class="verde">"Paragraph changed."</span> ;
+}                            
+                        </pre>
+                    </div>
+                </div>
+
+                <br />
+
+                <button type="button" onclick="functionRed('crimson')">Rojo</button>
+                <button type="button" onclick="functionBlack('crimson')">Negro</button>
+
+                <p id="crimson">Los scripts externos son prácticos cuando se utiliza el mismo código en muchas páginas web diferentes.</p>
+
+                <p>Los archivos JavaScript tienen la extensión de archivo .js .</p>
+
+                <p>Para utilizar un script externo, coloque el nombre del archivo de script en el atributo <span class="rojo">src</span> (fuente) de una etiqueta <span class="rojo"> &lt;script></span>:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+&lt;<span class="rojo">script</span> <span class="purpura">src</span>=<span class="verde">"myScript.js"</span>>&lt;<span class="rojo">/script</span>>                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_external" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Puedes colocar una referencia de script externa en <span class="rojo">&lt;head></span> o <span class="rojo">&lt;body></span> como desees.</p>
+
+                <p>El script se comportará como si estuviera ubicado exactamente donde <span class="rojo">&lt;script></span> se encuentra la etiqueta.</p>
+
+                <br />
+
+                <p class="fondo-texto">Los scripts externos no pueden contener <span class="rojo">&lt;script></span> etiquetas.</p>
+
+                <hr />
+
+                <h2>Ventajas del JavaScript externo</h2>
+
+                <p>Colocar scripts en archivos externos tiene algunas ventajas:</p>
+
+                <ul>
+                    <li>Separa HTML y código</li>
+                    <li>Hace que HTML y JavaScript sean más fáciles de leer y mantener.</li>
+                    <li>Los archivos JavaScript almacenados en caché pueden acelerar la carga de las páginas</li>
+                </ul>
+
+                <br />
+
+                <p>Para agregar varios archivos de script a una página, utilice varias etiquetas de script:</p>
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+&lt;<span class="rojo">script</span> <span class="purpura">src</span>=<span class="verde">"myScript1.js"</span>>&lt;<span class="rojo">/script</span>>
+&lt;<span class="rojo">script</span> <span class="purpura">src</span>=<span class="verde">"myScript2.js"</span>>&lt;<span class="rojo">/script</span>>                            
+                        </pre>
+                    </div>
+                </div>
+
+                <hr />
+
+                <h2>Referencias externas</h2>
+
+                <p>Se puede hacer referencia a un script externo de tres maneras diferentes:</p>
+
+                <ul>
+                    <li>Con una URL completa (una dirección web completa)</li>
+                    <li>Con una ruta de archivo (como /js/)</li>
+                    <li>Sin ningún camino</li>
+                </ul>
+
+                <br />
+
+                <p>Este ejemplo utiliza una URL completa para vincular a myScript.js:</p>
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+&lt;<span class="rojo">script</span> <span class="purpura">src</span>=<span class="verde">"https://www.w3schools.com/js/myScript.js"</span>>&lt;<span class="rojo">/script</span>>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_url" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Este ejemplo utiliza una ruta de archivo para vincularse a myScript.js:</p>
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+&lt;<span class="rojo">script</span> <span class="purpura">src</span>=<span class="verde">"/js/myScript.js"</span>>&lt;<span class="rojo">/script</span>>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_url_relative" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Este ejemplo no utiliza ninguna ruta para vincularse a myScript.js:</p>
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+&lt;<span class="rojo">script</span> <span class="purpura">src</span>=<span class="verde">"myScript.js"</span>>&lt;<span class="rojo">/script</span>>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_external" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <div class="caja-antProx">
+                    <a href="../index.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
             </aside>
         </main>
+
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+
+        <script src="../myScript.js"></script>
     </body>
 </html>
