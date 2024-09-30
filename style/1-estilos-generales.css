@@ -118,6 +118,9 @@ pre {
     right: 0;
     top: 0;
 }
+ul {
+    margin-left: 40px;
+}
 
 .lista-general {
     list-style: none;
@@ -210,6 +213,28 @@ pre {
 }
 
 .boton-prox:hover {
+    box-shadow: 0 0 4px #fff;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+.boton-ante {
+    display: inline-block;
+    padding: 5px 30px;
+    background-color: var(--rosa);
+    color: #000;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: 1s;
+    border: 2px solid var(--rosa);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.boton-ante:hover {
     box-shadow: 0 0 4px #fff;
     border: 2px solid rgba(0, 0, 0, 0.4);
 }
