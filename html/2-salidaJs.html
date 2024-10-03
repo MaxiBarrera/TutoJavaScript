@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/javaScript.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../style/1-estilos-generales.css" />
+        <title>Salida de JavaScript</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aIzquierda">
+                <div class="bar">
+                    <h3 style="padding: 5px 0 5px 20px">Tutorial de JS <i style="margin-left: 66px" class="fa-solid fa-bars"></i></h3>
+                </div>
+
+                <ul class="lista-general">
+                    <li class="no-check">
+                        <a href="../index.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Introducción a js</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/1-aDondeIr.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> A donde ir</a>
+                    </li>
+                    <li class="check">
+                        <a href="../html/1-aDondeIr.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle-check"></i> Salida de JavaScript</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <aside class="aDerecha">
+                <h1>Salida de JavaScript</h1>
+
+                <hr />
+
+                <h2>Posibilidades de visualización de JavaScript</h2>
+
+                <p>JavaScript puede "mostrar" datos de diferentes maneras:</p>
+
+                <ul class="ul-ej">
+                    <li>Escribir en un elemento HTML, utilizando <span class="rojo">innerHTML</span>.</li>
+                    <li>Escribir en la salida HTML usando <span class="rojo">document.write()</span>.</li>
+                    <li>Escribiendo en un cuadro de alerta, <span class="rojo">usando window.alert()</span>.</li>
+                    <li>Escribiendo en la consola del navegador, <span class="rojo">usando console.log()</span>.</li>
+                </ul>
+
+                <hr />
+
+                <h2>Uso de innerHTML</h2>
+
+                <p>Para acceder a un elemento HTML, JavaScript puede utilizar el método <span class="rojo">document.getElementById(id)</span>.</p>
+
+                <p>El atributo <span class="rojo">id</span> define el elemento HTML. La propiedad <span class="rojo">innerHTML</span> define el contenido HTML:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+&lt;<span class="rojo">!DOCTYPE</span> <span class="purpura">html</span>>
+&lt;<span class="rojo">html</span>>
+&lt;<span class="rojo">body</span>>
+
+&lt;<span class="rojo">h1</span>>My First Web Page&lt;<span class="rojo">/h1</span>>
+&lt;<span class="rojo">p</span>>My First Paragraph&lt;<span class="rojo">/p</span>>
+
+&lt;<span class="rojo">p</span> <span class="purpura">id</span>=<span class="verde">"demo"</span>>&lt;<span class="rojo">/p</span>>
+
+&lt;<span class="rojo">script</span>>
+document.getElementById(<span class="verde">"demo"</span>).innerHTML = <span class="azul">5</span> + <span class="azul">6</span>;
+&lt;<span class="rojo">/script</span>>
+
+&lt;<span class="rojo">/body</span>>
+&lt;<span class="rojo">/html</span>>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_dom" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p class="fondo-texto">Cambiar la propiedad innerHTML de un elemento HTML es una forma común de mostrar datos en HTML.</p>
+            </aside>
+        </main>
+
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+
+        <script src="../myScript.js"></script>
+    </body>
+</html>
