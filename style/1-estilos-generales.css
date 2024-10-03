@@ -23,6 +23,10 @@
     color: #c68bf0;
 }
 
+.azul {
+    color: blue;
+}
+
 @font-face {
     font-family: code;
     src: url(../fonts/RobotoMono-SemiBold.ttf);
