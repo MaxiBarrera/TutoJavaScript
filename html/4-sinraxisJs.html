@@ -32,6 +32,9 @@
                     <li class="check">
                         <a href="../html/4-sinraxisJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle-check"></i> Sintaxis JS</a>
                     </li>
+                    <li class="no-check">
+                        <a href="../html/5-comentarios.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Comentarios JS</a>
+                    </li>
                 </ul>
             </aside>
 
@@ -74,9 +77,9 @@ y = <span class="azul">6</span>;
 
                 <br />
 
-                <p>Los valores fijos se denominan <strong>literales</strong> .</p>
+                <p>Los valores fijos se denominan <strong>literales</strong>.</p>
 
-                <p>Los valores variables se denominan <strong>Variables</strong> .</p>
+                <p>Los valores variables se denominan <strong>Variables</strong>.</p>
 
                 <hr />
 
@@ -276,6 +279,136 @@ y = x * <span class="azul">10</span>;
                 <hr />
 
                 <h2>Comentarios de JavaScript</h2>
+
+                <p>No todas las declaraciones de JavaScript se "ejecutan".</p>
+
+                <p>El código después de dos barras <span class="rojo">//</span> o entre <span class="rojo">/*</span> y <span class="rojo">*/</span> se trata como un comentario.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> x = <span class="azul">5</span>;   <span class="gris">// I will be executed</span>
+
+<span class="gris">// x = 6;   I will NOT be executed</span>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_comments" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p class="fondo-texto">Aprenderá más sobre los comentarios en un capítulo posterior.</p>
+
+                <hr />
+
+                <h2>Identificadores/nombres de JavaScript</h2>
+
+                <p>Los identificadores son nombres de JavaScript.</p>
+
+                <p>Los identificadores se utilizan para nombrar variables, palabras clave y funciones.</p>
+
+                <p>Las reglas para los nombres legales son las mismas en la mayoría de los lenguajes de programación.</p>
+
+                <p>Un nombre de JavaScript debe comenzar con:</p>
+
+                <br />
+
+                <ul class="ul-ej">
+                    <li>Una letra (AZ o az)</li>
+                    <li>Un signo de dólar ($)</li>
+                    <li>O un guión bajo (_)</li>
+                </ul>
+
+                <br />
+
+                <p>Los caracteres subsiguientes pueden ser letras, dígitos, guiones bajos o signos de dólar.</p>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota</h2>
+
+                    <p>No se permiten números como primer carácter en los nombres.</p>
+
+                    <p>De esta manera, JavaScript puede distinguir fácilmente identificadores de números</p>
+                </div>
+
+                <hr />
+
+                <h2>JavaScript distingue entre mayúsculas y minúsculas</h2>
+
+                <p>Todos los identificadores de JavaScript distinguen <strong>entre mayúsculas y minúsculas</strong>.</p>
+
+                <p>Las variables <span class="rojo">lastName</span> y <span class="rojo">lastname</span>, son dos variables diferentes:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> lastname, lastName;
+lastName = <span class="verde">"Doe"</span>;
+lastname = <span class="verde">"Peterson"</span>;                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_case" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>JavaScript no interpreta LET o Let como la palabra clave let .</p>
+
+                <hr />
+
+                <h2>JavaScript y Camel Case</h2>
+
+                <p>Históricamente, los programadores han utilizado diferentes formas de unir varias palabras en un nombre de variable:</p>
+
+                <br />
+
+                <p><strong>Guiones:</strong></p>
+
+                <p>first-name, last-name, master-card, inter-city.</p>
+
+                <br />
+
+                <p class="fondo-texto">Los guiones no están permitidos en JavaScript. Están reservados para las restas.</p>
+
+                <br />
+
+                <p><strong>Guión bajo:</strong></p>
+
+                <p>first_name, last_name, master_card, inter_city.</p>
+
+                <br />
+
+                <p><strong>Upper Camel Case (Pascal Case):</strong></p>
+
+                <p>FirstName, LastName, MasterCard, InterCity.</p>
+
+                <br />
+
+                <p><strong>Lower Camel Case:</strong></p>
+
+                <p>Los programadores de JavaScript tienden a utilizar el formato camel case que comienza con una letra minúscula:</p>
+
+                <p>firstName, lastName, masterCard, interCity.</p>
+
+                <hr />
+
+                <h2>Conjunto de caracteres de JavaScript</h2>
+
+                <p>JavaScript utiliza el conjunto de caracteres <strong>Unicode</strong>.</p>
+
+                <p>Unicode cubre (casi) todos los caracteres, signos de puntuación y símbolos del mundo.</p>
+
+                <div class="caja-antProx">
+                    <a href="../html/3-DeclaracionesJs.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="../html/5-comentarios.html" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
             </aside>
         </main>
 
