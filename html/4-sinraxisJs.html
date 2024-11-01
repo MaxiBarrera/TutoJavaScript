@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/javaScript.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../style/1-estilos-generales.css" />
+        <title>Sintaxis de JavaScript</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aIzquierda">
+                <div class="bar">
+                    <h3 style="padding: 5px 0 5px 20px">Tutorial de JS <i style="margin-left: 66px" class="fa-solid fa-bars"></i></h3>
+                </div>
+
+                <ul class="lista-general">
+                    <li class="no-check">
+                        <a href="../index.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Introducción a JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/1-aDondeIr.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> A donde ir</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/2-salidaJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Salida de JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/3-DeclaracionesJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Declaraciones JS</a>
+                    </li>
+                    <li class="check">
+                        <a href="../html/4-sinraxisJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle-check"></i> Sintaxis JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/5-comentarios.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Comentarios JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/6-variables.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Variables JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/7-let.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Let JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/8-const.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Const JS</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <aside class="aDerecha">
+                <h1>Sintaxis de JavaScript</h1>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <p>La sintaxis de JavaScript es el conjunto de reglas según las cuales se construyen los programas JavaScript:</p>
+
+                    <br />
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="gris">// How to create variables:</span>
+<span class="purpura">var</span> x;
+<span class="purpura">let</span> y;
+
+<span class="gris">// How to use variables:</span>
+x = <span class="azul">5</span>;
+y = <span class="azul">6</span>;
+<span class="purpura">let</span> z = x + y;                            
+                        </pre>
+                    </div>
+                </div>
+
+                <br />
+
+                <h2>Valores de JavaScript</h2>
+
+                <p>La sintaxis de JavaScript define dos tipos de valores:</p>
+
+                <br />
+
+                <ul class="ul-ej">
+                    <li>Valores fijos</li>
+                    <li>Valores variables</li>
+                </ul>
+
+                <br />
+
+                <p>Los valores fijos se denominan <strong>literales</strong>.</p>
+
+                <p>Los valores variables se denominan <strong>Variables</strong>.</p>
+
+                <hr />
+
+                <h2>Literales de JavaScript</h2>
+
+                <p>Las dos reglas de sintaxis más importantes para valores fijos son:</p>
+
+                <p>1. Los números se escriben con o sin decimales:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+<span class="azul">10.50</span>
+
+<span class="azul">1001</span>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_numbers" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>2. Las cadenas son texto, escrito entre comillas dobles o simples:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+<span class="verde">"John Doe"</span>
+
+<span class="verde">'John Doe'</span>                           
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_strings" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Variables de JavaScript</h2>
+
+                <p>En un lenguaje de programación, las variables se utilizan para almacenar valores de datos.</p>
+
+                <p>JavaScript utiliza las palabras clave <span class="rojo">var</span>, <span class="rojo">let</span> y <span class="rojo">const</span> para declarar variables</p>
+
+                <p>Se utiliza un signo igual para asignar valores a las variables.</p>
+
+                <p>En este ejemplo, x se define como una variable. Luego, a x se le asigna (se le da) el valor 6:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> x;
+x = <span class="azul">6</span>;                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_variables" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Operadores de JavaScript</h2>
+
+                <p>JavaScript utiliza operadores aritméticos ( <span class="rojo">+ - * /</span> ) para calcular valores:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+(<span class="azul">5</span> + <span class="azul">6</span>) * <span class="azul">10</span>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_operators" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>JavaScript utiliza un operador de asignación (<span class="rojo">=</span>) para asignar valores a las variables:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> x, y;
+x = <span class="azul">5</span>;
+y = <span class="azul">6</span>;                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_assign" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Expresiones de JavaScript</h2>
+
+                <p>Una expresión es una combinación de valores, variables y operadores, que se calcula como un valor.</p>
+
+                <p>El cálculo se llama evaluación.</p>
+
+                <p>Por ejemplo, 5 * 10 evalúa a 50:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+<span class="azul">5</span> * <span class="azul">10</span>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_expressions" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Las expresiones también pueden contener valores variables:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+<span class="azul">x</span> * <span class="azul">10</span>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_expressions_variables" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Los valores pueden ser de varios tipos, como números y cadenas.</p>
+
+                <p>Por ejemplo, "John" + " " + "Doe", evalúa a "John Doe":</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+<span class="verde">"John"</span> + <span class="verde">" "</span> + <span class="verde">"Doe"</span>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_expressions_strings" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Palabras clave de JavaScript</h2>
+
+                <p>Las palabras clave de JavaScript se utilizan para identificar las acciones que se deben realizar.</p>
+
+                <p>La palabra clave <span class="rojo">let</span> le dice al navegador que cree variables:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> x, y;
+x = <span class="azul">5</span> + <span class="azul">6</span>;
+y = x * <span class="azul">10</span>;                           
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_let" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>La palabra clave <span class="rojo">var</span> también le dice al navegador que cree variables:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">var</span> x, y;
+x = <span class="azul">5</span> + <span class="azul">6</span>;
+y = x * <span class="azul">10</span>;                           
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_keywords" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <p>En estos ejemplos, el uso de <span class="rosa">var</span> o <span class="rosa">let</span> producirá el mismo resultado.</p>
+
+                    <p>Aprenderá más sobre <span class="rosa">var</span> y <span class="rosa">let</span> más adelante en este tutorial.</p>
+                </div>
+
+                <hr />
+
+                <h2>Comentarios de JavaScript</h2>
+
+                <p>No todas las declaraciones de JavaScript se "ejecutan".</p>
+
+                <p>El código después de dos barras <span class="rojo">//</span> o entre <span class="rojo">/*</span> y <span class="rojo">*/</span> se trata como un comentario.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> x = <span class="azul">5</span>;   <span class="gris">// I will be executed</span>
+
+<span class="gris">// x = 6;   I will NOT be executed</span>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_comments" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p class="fondo-texto">Aprenderá más sobre los comentarios en un capítulo posterior.</p>
+
+                <hr />
+
+                <h2>Identificadores/nombres de JavaScript</h2>
+
+                <p>Los identificadores son nombres de JavaScript.</p>
+
+                <p>Los identificadores se utilizan para nombrar variables, palabras clave y funciones.</p>
+
+                <p>Las reglas para los nombres legales son las mismas en la mayoría de los lenguajes de programación.</p>
+
+                <p>Un nombre de JavaScript debe comenzar con:</p>
+
+                <br />
+
+                <ul class="ul-ej">
+                    <li>Una letra (AZ o az)</li>
+                    <li>Un signo de dólar ($)</li>
+                    <li>O un guión bajo (_)</li>
+                </ul>
+
+                <br />
+
+                <p>Los caracteres subsiguientes pueden ser letras, dígitos, guiones bajos o signos de dólar.</p>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota</h2>
+
+                    <p>No se permiten números como primer carácter en los nombres.</p>
+
+                    <p>De esta manera, JavaScript puede distinguir fácilmente identificadores de números</p>
+                </div>
+
+                <hr />
+
+                <h2>JavaScript distingue entre mayúsculas y minúsculas</h2>
+
+                <p>Todos los identificadores de JavaScript distinguen <strong>entre mayúsculas y minúsculas</strong>.</p>
+
+                <p>Las variables <span class="rojo">lastName</span> y <span class="rojo">lastname</span>, son dos variables diferentes:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> lastname, lastName;
+lastName = <span class="verde">"Doe"</span>;
+lastname = <span class="verde">"Peterson"</span>;                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_case" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>JavaScript no interpreta LET o Let como la palabra clave let .</p>
+
+                <hr />
+
+                <h2>JavaScript y Camel Case</h2>
+
+                <p>Históricamente, los programadores han utilizado diferentes formas de unir varias palabras en un nombre de variable:</p>
+
+                <br />
+
+                <p><strong>Guiones:</strong></p>
+
+                <p>first-name, last-name, master-card, inter-city.</p>
+
+                <br />
+
+                <p class="fondo-texto">Los guiones no están permitidos en JavaScript. Están reservados para las restas.</p>
+
+                <br />
+
+                <p><strong>Guión bajo:</strong></p>
+
+                <p>first_name, last_name, master_card, inter_city.</p>
+
+                <br />
+
+                <p><strong>Upper Camel Case (Pascal Case):</strong></p>
+
+                <p>FirstName, LastName, MasterCard, InterCity.</p>
+
+                <br />
+
+                <p><strong>Lower Camel Case:</strong></p>
+
+                <p>Los programadores de JavaScript tienden a utilizar el formato camel case que comienza con una letra minúscula:</p>
+
+                <p>firstName, lastName, masterCard, interCity.</p>
+
+                <hr />
+
+                <h2>Conjunto de caracteres de JavaScript</h2>
+
+                <p>JavaScript utiliza el conjunto de caracteres <strong>Unicode</strong>.</p>
+
+                <p>Unicode cubre (casi) todos los caracteres, signos de puntuación y símbolos del mundo.</p>
+
+                <div class="caja-antProx">
+                    <a href="../html/3-DeclaracionesJs.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="../html/5-comentarios.html" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </aside>
+        </main>
+
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+
+        <script src="../myScript.js"></script>
+    </body>
+</html>
