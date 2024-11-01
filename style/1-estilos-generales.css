@@ -26,10 +26,10 @@
 }
 
 .azul {
-    color: blue;
+    color: rgb(71, 71, 211);
 }
 .gris {
-    color: rgb(63, 63, 63);
+    color: rgb(107, 106, 106);
 }
 
 @font-face {
@@ -45,6 +45,11 @@
 @font-face {
     font-family: mayus;
     src: url(../fonts/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: fondo-texto;
+    src: url(../fonts/NanumGothicCoding-Regular.ttf);
 }
 
 * {
@@ -83,7 +88,7 @@ h1 {
 
 h2 {
     font-size: 1.3rem;
-    margin: 15px 0;
+    margin: 15px 0 5px;
     line-height: 24px;
 }
 
@@ -99,24 +104,45 @@ pre {
     font-size: 0.8rem;
 }
 
+img {
+    margin: 40px 0;
+}
+
 strong {
     font-family: mayus;
     font-size: 1rem;
 }
 
 table {
-    border: 1px solid var(--violeta);
+    border: 1px solid rgb(4, 107, 4);
+    box-shadow: 0 0 5px rgb(4, 107, 4);
     border-collapse: collapse;
     width: 100%;
+    margin: 25px 0;
+}
+
+.table-nav th,
+.table-nav td {
+    border: 1px solid rgb(4, 107, 4);
+    box-shadow: 0 0 5px rgb(4, 107, 4);
+    text-align: center;
+    padding: 5px 0;
+}
+
+.table-nav th {
+    font-size: 26px;
 }
 
 td,
 th {
-    padding: 0 5px;
+    padding: 0 4px;
 }
 
 th {
     text-align: left;
+    line-height: 14px;
+    font-size: 16px;
+    padding: 5px;
 }
 
 tr:nth-child(even) {
@@ -194,6 +220,7 @@ tr:nth-child(even) {
 .fondo-texto {
     background-color: var(--violeta);
     color: #fff;
+    font-family: fondo-texto;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 0 10px #000;
