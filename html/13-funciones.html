@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/javaScript.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../style/1-estilos-generales.css" />
+        <title>Funciones de JavaScript</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aIzquierda">
+                <div class="bar">
+                    <h3 style="padding: 5px 0 5px 20px">Tutorial de JS <i style="margin-left: 66px" class="fa-solid fa-bars"></i></h3>
+                </div>
+
+                <ul class="lista-general">
+                    <li class="no-check">
+                        <a href="../index.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Introducción a JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/1-aDondeIr.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> A donde ir</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/2-salidaJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Salida de JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/3-DeclaracionesJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Declaraciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/4-sinraxisJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Sintaxis JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/5-comentarios.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Comentarios JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/6-variables.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Variables JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/7-let.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Let JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/8-const.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Const JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/9-operadoresJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Operadores JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/10-aritmetica.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Aritmética JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/11-asignacion.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Asignación JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/12-tiposDeDatos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Tipos de datos JS</a>
+                    </li>
+                    <li class="check">
+                        <a href="../html/13-funciones.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle-check"></i> Funciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/14-objetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Objetos JS</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <aside class="aDerecha">
+                <h1>Funciones de JavaScript</h1>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <p>Una función de JavaScript es un bloque de código diseñado para realizar una tarea específica.</p>
+
+                    <p>Una función de JavaScript se ejecuta cuando "algo" la invoca (la llama).</p>
+                </div>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="gris">// Function to compute the product of p1 and p2</span>
+<span class="purpura">function</span> myFunction(p1, p2) {
+  <span class="purpura">return</span> p1 * p2;
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_functions" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Sintaxis de funciones de JavaScript</h2>
+
+                <p>Una función de JavaScript se define con la palabra clave <span class="rojo">function</span>, seguida de un nombre , seguido de paréntesis ().</p>
+
+                <p>Los nombres de funciones pueden contener letras, dígitos, guiones bajos y signos de dólar (las mismas reglas que las variables).</p>
+
+                <p>Los paréntesis pueden incluir nombres de parámetros separados por comas: (parámetro1, parámetro2, ...)</p>
+
+                <p>El código a ejecutar por la función se coloca entre llaves: {}</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">function</span> name(parameter1, parameter2, parameter3) {
+  <span class="gris">// code to be executed</span>
+}                            
+                        </pre>
+                    </div>
+                </div>
+
+                <br />
+
+                <p><strong>Los parámetros</strong> de la función se enumeran dentro de los paréntesis () en la definición de la función.</p>
+
+                <p><strong>Los argumentos</strong> de una función son los valores que recibe la función cuando se invoca.</p>
+
+                <p>Dentro de la función, los argumentos (los parámetros) se comportan como variables locales.</p>
+
+                <hr />
+
+                <h2>Invocación de función</h2>
+
+                <p>El código dentro de la función se ejecutará cuando "algo" invoque (llame) la función:</p>
+
+                <br />
+
+                <ul class="ul-ej">
+                    <li>Cuando ocurre un evento (cuando un usuario hace clic en un botón)</li>
+                    <li>Cuando se invoca (llama) desde el código JavaScript</li>
+                    <li>Automáticamente (autoinvocado)</li>
+                </ul>
+
+                <hr />
+
+                <h2>Función de retorno</h2>
+
+                <p>Cuando JavaScript llega a una declaración <span class="rojo">return</span>, la función dejará de ejecutarse.</p>
+
+                <p>Si la función se invocó desde una declaración, JavaScript "regresará" para ejecutar el código después de la declaración que la invocó.</p>
+
+                <p>Las funciones suelen calcular un <strong>valor de retorno</strong>. El valor de retorno se "devuelve" al "invocador":</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <p>Calcular el producto de dos números y devolver el resultado:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="gris">// Function is called, the return value will end up in x</span>
+<span class="purpura">let</span> x = myFunction(<span class="azul">4</span>, <span class="azul">3</span>);
+
+<span class="purpura">function</span> myFunction(a, b) {
+<span class="gris">// Function returns the product of a and b</span>
+  <span class="purpura">return</span> a * b;
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_return" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>¿Por qué Funciones?</h2>
+
+                    <p>Con funciones puedes reutilizar código</p>
+
+                    <p>Puedes escribir código que pueda utilizarse muchas veces.</p>
+
+                    <p>Puedes utilizar el mismo código con diferentes argumentos para producir resultados diferentes.</p>
+                </div>
+
+                <hr />
+
+                <h2>El operador ()</h2>
+
+                <p>El operador () invoca (llama) la función:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <p>Convertir Fahrenheit a Celsius:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">function</span> toCelsius(fahrenheit) {
+  <span class="purpura">return</span> (<span class="azul">5</span>/<span class="azul">9</span>) * (fahrenheit-<span class="azul">32</span>);
+}
+
+<span class="purpura">let</span> value = toCelsius(<span class="azul">77</span>);                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_farenheit_to_celsius" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Acceder a una función con parámetros incorrectos puede devolver una respuesta incorrecta:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">function</span> toCelsius(fahrenheit) {
+  <span class="purpura">return</span> (<span class="azul">5</span>/<span class="azul">9</span>) * (fahrenheit-<span class="azul">32</span>);
+}
+
+<span class="purpura">let</span> value = toCelsius();                     
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_farenheit_to_celsius_3" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Acceder a una función sin () devuelve la función y no el resultado de la función:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">function</span> toCelsius(fahrenheit) {
+  <span class="purpura">return</span> (<span class="azul">5</span>/<span class="azul">9</span>) * (fahrenheit-<span class="azul">32</span>);
+}
+
+<span class="purpura">let</span> value = toCelsius;                     
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_farenheit_to_celsius_2" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota</h2>
+
+                    <p>Como se puede ver en los ejemplos anteriores, <span class="rosa">toCelsius</span> se refiere al objeto de la función y <span class="rosa">toCelsius()</span> se refiere al resultado de la función.</p>
+                </div>
+
+                <hr />
+
+                <h2>Funciones utilizadas como valores variables</h2>
+
+                <p>Las funciones se pueden utilizar de la misma manera que las variables, en todo tipo de fórmulas, asignaciones y cálculos.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <p>En lugar de utilizar una variable para almacenar el valor de retorno de una función:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> x = toCelsius(<span class="azul">77</span>);
+<span class="purpura">let</span> text = <span class="verde">"The temperature is "</span> + x + <span class="verde">" Celsius"</span>;                    
+                        </pre>
+                    </div>
+
+                    <br />
+
+                    <p>Puedes utilizar la función directamente, como valor variable:</p>
+
+                    <br />
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"The temperature is "</span> + toCelsius(<span class="azul">77</span>) + <span class="verde">" Celsius"</span>;                   
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_variable" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Variables locales</h2>
+
+                <p>Las variables declaradas dentro de una función de JavaScript se vuelven LOCALES para la función.</p>
+
+                <p>Sólo se puede acceder a las variables locales desde dentro de la función.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="gris">// code here can NOT use carName</span>
+
+<span class="purpura">function</span> myFunction() {
+  <span class="purpura">let</span> carName = <span class="verde">"Volvo"</span>;
+  <span class="gris">// code here CAN use carName</span>
+}
+
+<span class="gris">// code here can NOT use carName</span>                    
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_function_scope" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Dado que las variables locales solo se reconocen dentro de sus funciones, las variables con el mismo nombre se pueden usar en diferentes funciones.</p>
+
+                <p>Las variables locales se crean cuando se inicia una función y se eliminan cuando se completa.</p>
+
+                <!-- ================================================== -->
+
+                <div class="caja-antProx">
+                    <a href="../html/12-tiposDeDatos.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="../html/14-objetos.html" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </aside>
+        </main>
+
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+
+        <script src="../myScript.js"></script>
+    </body>
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/javaScript.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../style/1-estilos-generales.css" />
+        <title>JavaScript Const</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aIzquierda">
+                <div class="bar">
+                    <h3 style="padding: 5px 0 5px 20px">Tutorial de JS <i style="margin-left: 66px" class="fa-solid fa-bars"></i></h3>
+                </div>
+
+                <ul class="lista-general">
+                    <li class="no-check">
+                        <a href="../index.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Introducción a JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/1-aDondeIr.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> A donde ir</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/2-salidaJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Salida de JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/3-DeclaracionesJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Declaraciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/4-sinraxisJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Sintaxis JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/5-comentarios.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Comentarios JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/6-variables.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Variables JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/7-let.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Let JS</a>
+                    </li>
+                    <li class="check">
+                        <a href="../html/8-const.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle-check"></i> Const JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/9-operadoresJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Operadores JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/10-aritmetica.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Aritmética JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/11-asignacion.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Asignación JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/12-tiposDeDatos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Tipos de datos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/13-funciones.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Funciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/14-objetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Objetos JS</a>
+                    </li>
+                </ul>
+            </aside>
+            <aside class="aDerecha">
+                <h1>JavaScript Const</h1>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <p>La palabra clave <span class="rosa">const</span> se introdujo en ES6 (2015)</p>
+
+                    <p>Las variables definidas con <span class="rosa">const</span> no se pueden <strong>redeclarar</strong></p>
+
+                    <p>Las variables definidas con <span class="rosa">const</span> no se pueden <strong>reasignar</strong></p>
+
+                    <p>Las variables definidas <span class="rosa">const</span> tienen <strong>alcance de bloque</strong></p>
+                </div>
+
+                <br />
+
+                <h2>No se puede reasignar</h2>
+
+                <p>Una variable definida con la palabra clave <span class="rojo">const</span> no se puede reasignar:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> PI = <span class="azul">3.141592653589793</span>;
+PI = <span class="azul">3.14</span>;      <span class="gris">// This will give an error</span>
+PI = PI + <span class="azul">10</span>;   <span class="gris">// This will also give an error</span>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_const_value" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Debe ser asignado</h2>
+
+                <p>A las variables de JavaScript <span class="rojo">const</span> se les debe asignar un valor cuando se declaran:</p>
+
+                <br />
+
+                <div style="background-color: rgb(4, 107, 4)" class="borde-caja">
+                    <h3>Correcto</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const </span>PI = <span class="azul">3.14159265359</span>;                           
+                        </pre>
+                    </div>
+                </div>
+
+                <br />
+
+                <div style="background-color: #dc143c" class="borde-caja">
+                    <h3>Incorrecto</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> PI;
+PI = <span class="azul">3.14159265359</span>;                           
+                        </pre>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>¿Cuándo utilizar const en JavaScript?</h2>
+
+                    <p>Siempre declara una variable con <span class="rosa">const</span> cuando sepas que el valor no debe cambiarse.</p>
+
+                    <p>Use <span class="rosa">const</span> cuando declare:</p>
+
+                    <ul class="ul-ej">
+                        <li>Un nuevo Array</li>
+                        <li>Un nuevo Object</li>
+                        <li>Un nuevo Function</li>
+                        <li>Un nuevo RegExp</li>
+                    </ul>
+                </div>
+
+                <hr />
+
+                <h2>Constant Objects and Arrays</h2>
+
+                <p>La palabra clave <span class="rojo">const</span> es un poco engañosa.</p>
+
+                <p>No define un valor constante, sino una referencia constante a un valor.</p>
+
+                <p>Por esto NO puedes:</p>
+
+                <br />
+
+                <ul class="ul-ej">
+                    <li>Reasignar un valor constante</li>
+                    <li>Reasignar un array constante</li>
+                    <li>Reasignar un object constante</li>
+                </ul>
+
+                <br />
+
+                <p>Pero SI puedes:</p>
+
+                <br />
+
+                <ul class="ul-ej">
+                    <li>Cambiar los elementos de una array constante</li>
+                    <li>Cambiar las propiedades de un object constante</li>
+                </ul>
+
+                <hr />
+
+                <h2>Constant Arrays</h2>
+
+                <p>Puedes cambiar los elementos de una array constante:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="gris">// You can create a constant array:</span>
+<span class="purpura">const</span> cars = [<span class="verde">"Saab"</span>, <span class="verde">"Volvo"</span>, <span class="verde">"BMW"</span>];
+
+<span class="gris">// You can change an element:</span>
+cars[<span class="azul">0</span>] = <span class="verde">"Toyota"</span>;
+
+<span class="gris">// You can add an element:</span>
+cars.push(<span class="verde">"Audi"</span>);                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_const_array" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Pero NO puedes reasignar un array:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> cars = [<span class="verde">"Saab"</span>, <span class="verde">"Volvo"</span>, <span class="verde">"BMW"</span>];
+
+cars = [<span class="verde">"Toyota"</span>, <span class="verde">"Volvo"</span>, <span class="verde">"Audi"</span>];    <span class="gris">// ERROR</span>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_const_array_assign" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Objetos constantes</h2>
+
+                <p>Puedes cambiar las propiedades de un objeto constante:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="gris">// You can create a const object:</span>
+<span class="purpura">const</span> car = {type:<span class="verde">"Fiat"</span>, model:<span class="verde">"500"</span>, color:<span class="verde">"white"</span>};
+
+<span class="gris">// You can change a property:</span>
+car.color = <span class="verde">"red"</span>;
+
+<span class="gris">// You can add a property:</span>
+car.owner = <span class="verde">"Johnson"</span>;                           
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_const_object" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Pero NO puedes reasignar el objeto:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> car = {type:<span class="verde">"Fiat"</span>, model:<span class="verde">"500"</span>, color:<span class="verde">"white"</span>};
+
+car = {type: <span class="verde">"Volvo"</span> , model: <span class="verde">"EX60"</span> , color: <span class="verde">"red"</span> };    <span class="gris">// ERROR </span>                         
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_const_object_assign" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Diferencia entre var, let y const</h2>
+
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Alcance</th>
+                        <th>Redeclarar</th>
+                        <th>Reasignar</th>
+                        <th>Hoisted</th>
+                        <th>Vincula esto</th>
+                    </tr>
+
+                    <tr>
+                        <td>var</td>
+                        <td>No</td>
+                        <td>Si</td>
+                        <td>Si</td>
+                        <td>Si</td>
+                        <td>Si</td>
+                    </tr>
+
+                    <tr>
+                        <td>let</td>
+                        <td>Si</td>
+                        <td>No</td>
+                        <td>Si</td>
+                        <td>No</td>
+                        <td>No</td>
+                    </tr>
+
+                    <tr>
+                        <td>const</td>
+                        <td>Si</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>No</td>
+                        <td>No</td>
+                    </tr>
+                </table>
+
+                <br />
+
+                <h2>¿Qué es bueno?</h2>
+
+                <p><span class="rojo">let</span> y <span class="rojo">const</span> tienen <strong>alcance de bloque</strong>.</p>
+
+                <p><span class="rojo">let</span> y <span class="rojo">const</span> no puede ser <strong>redeclarado</strong>.</p>
+
+                <p><span class="rojo">let</span> y <span class="rojo">const</span> debe <strong>declararse</strong> antes de su uso.</p>
+
+                <p><span class="rojo">let</span> y <span class="rojo">const</span> no se <strong>vinculan</strong> a <span class="rojo">this</span></p>
+
+                <p><span class="rojo">let</span> y <span class="rojo">const</span> no se izan</p>
+
+                <h2>¿Qué no está bien?</h2>
+
+                <p><span class="rojo">var</span> no es necesario declararlo</p>
+
+                <p><span class="rojo">var</span> se iza.</p>
+
+                <p><span class="rojo">var</span> se vincula a <span class="rojo">this</span>.</p>
+
+                <hr />
+
+                <h2>Compatibilidad con navegadores</h2>
+
+                <p>Las palabras clave <span class="rojo">let</span> y <span class="rojo">const</span> no son compatibles con Internet Explorer 11 o versiones anteriores.</p>
+
+                <p>La siguiente tabla define las primeras versiones del navegador con soporte completo:</p>
+
+                <br />
+
+                <table class="table-nav">
+                    <tr>
+                        <th>
+                            <span class="azul"><i class="fa-brands fa-chrome"></i></span>
+                        </th>
+                        <th>
+                            <span class="azul"><i class="fa-brands fa-edge"></i></span>
+                        </th>
+                        <th>
+                            <span class="azul"><i class="fa-brands fa-firefox-browser"></i></span>
+                        </th>
+                        <th>
+                            <span class="azul"><i class="fa-solid fa-compass"></i></span>
+                        </th>
+                        <th>
+                            <span class="azul"><i class="fa-brands fa-opera"></i></span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Chrome 49</td>
+                        <td>Edge 12</td>
+                        <td>Firefox 36</td>
+                        <td>Safari 11</td>
+                        <td>Opera 36</td>
+                    </tr>
+                    <tr>
+                        <td>Mar, 2016</td>
+                        <td>Jul, 2015</td>
+                        <td>Jan, 2015</td>
+                        <td>Sep, 2017</td>
+                        <td>Mar, 2016</td>
+                    </tr>
+                </table>
+
+                <hr />
+
+                <h2>Ámbito de aplicación del bloque</h2>
+
+                <p>Declarar una variable con <span class="rojo">const</span> es similar a <span class="rojo">let</span> cuando se trata de <strong>Block Scope</strong>.</p>
+
+                <p>La x declarada en el bloque, en este ejemplo, no es la misma que la x declarada fuera del bloque:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> x = <span class="azul">10</span>;
+<span class="gris">// Here x is 10</span>
+
+{
+<span class="purpura">const</span> x = <span class="azul">2</span>;
+<span class="gris">// Here x is 2</span>
+}
+
+<span class="gris">// Here x is 10</span>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_const" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Redeclarando</h2>
+
+                <p>Se permite redeclarar una variable <span class="rojo">var</span> de JavaScript en cualquier parte de un programa:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">var</span> x = <span class="azul">2</span>;     <span class="gris">// Allowed</span>
+<span class="purpura">var</span> x = <span class="azul">3</span>;     <span class="gris">// Allowed</span>
+x = <span class="azul">4</span>;         <span class="gris">// Allowed</span>                            
+                        </pre>
+                    </div>
+                </div>
+
+                <br />
+
+                <p>No se permite volver a declarar una variable existente <span class="rojo">var</span> en el mismo ámbito con <span class="rojo">let</span> o <span class="rojo">const</span>:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">var</span> x = <span class="azul">2</span>;     <span class="gris">// Allowed</span>
+<span class="purpura">const</span> x = <span class="azul">2</span>;   <span class="gris">// Not allowed</span>
+
+{
+<span class="purpura">let</span> x = <span class="azul">2</span>;     <span class="gris">// Allowed</span>
+<span class="purpura">const</span> x = <span class="azul">2</span>;   <span class="gris">// Not allowed</span>
+}
+
+{
+<span class="purpura">const</span> x = <span class="azul">2</span>;   <span class="gris">// Allowed</span>
+<span class="purpura">const</span> x = <span class="azul">2</span>;   <span class="gris">// Not allowed</span>
+}                            
+                        </pre>
+                    </div>
+                </div>
+
+                <br />
+
+                <p>No se permite reasignar una variable <span class="rojo">const</span> existente, en el mismo ámbito:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const </span>x = <span class="azul">2</span>;     <span class="gris">// Allowed</span>
+x = <span class="azul">2</span>;           <span class="gris">// Not allowed</span>
+<span class="purpura">var</span> x = <span class="azul">2</span>;       <span class="gris">// Not allowed</span>
+<span class="purpura">let</span> x = <span class="azul">2</span>;       <span class="gris">// Not allowed</span>
+<span class="purpura">const </span>x = <span class="azul">2</span>;     <span class="gris">// Not allowed</span>
+
+{
+  <span class="purpura">const </span>x = <span class="azul">2</span>;   <span class="gris">// Allowed</span>
+  x = <span class="azul">2</span>;         <span class="gris">// Not allowed</span>
+  <span class="purpura">var</span> x = <span class="azul">2</span>;     <span class="gris">// Not allowed</span>
+  <span class="purpura">let</span> x = <span class="azul">2</span>;     <span class="gris">// Not allowed</span>
+  <span class="purpura">const </span>x = <span class="azul">2</span>;   <span class="gris">// Not allowed</span>
+}                            
+                        </pre>
+                    </div>
+                </div>
+
+                <br />
+
+                <p>Se permite redeclarar una variable con <span class="rojo">const</span>, en otro ámbito o en otro bloque:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> x = <span class="azul">2</span>;       <span class="gris">// Allowed</span>
+
+{
+  <span class="purpura">const</span> x = <span class="azul">3</span>;   <span class="gris">// Allowed</span>
+}
+
+{
+  <span class="purpura">const</span> x = <span class="azul">4</span>;   <span class="gris">// Allowed</span>
+}                            
+                        </pre>
+                    </div>
+                </div>
+
+                <hr />
+
+                <h2>Elevación</h2>
+
+                <p>Las variables definidas con <span class="rojo">var</span> se elevan a la parte superior y se pueden inicializar en cualquier momento.</p>
+
+                <p>Significado: Puedes utilizar la variable antes de que se declare:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <p>Esto está bien:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+carName = <span class="verde">"Volvo"</span>;
+<span class="purpura">var</span> carName;                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_let_hoisting_var" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Las variables definidas con <span class="rojo">const</span> también se elevan a la parte superior, pero no se inicializan.</p>
+
+                <p>Significado: Usar una variable <span class="rojo">const</span> antes de declararla dará como resultado <span class="rojo">ReferenceError</span>:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <p>Esto está bien:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+alert (carName);
+<span class="purpura">const</span> carName = <span class="verde">"Volvo"</span>;                           
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_const_hoisting" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <div class="caja-antProx">
+                    <a href="../html/7-let.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="../html/9-operadoresJs.html" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </aside>
+        </main>
+
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+
+        <script src="../myScript.js"></script>
+    </body>
+</html>
