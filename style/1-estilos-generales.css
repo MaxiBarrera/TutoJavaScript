@@ -32,6 +32,17 @@
     color: rgb(107, 106, 106);
 }
 
+.verdeC {
+    color: #4ff33a;
+}
+.amarillo {
+    color: orangered;
+}
+@font-face {
+    font-family: text-enunciado;
+    src: url(../fonts/Outfit-Regular.ttf);
+}
+
 @font-face {
     font-family: code;
     src: url(../fonts/RobotoMono-SemiBold.ttf);
@@ -71,7 +82,7 @@ p {
     font-size: 0.9rem;
     font-weight: 600;
     padding: 8px 0;
-    line-height: 18px;
+    line-height: 1.25rem;
 }
 hr {
     border: none;
@@ -81,9 +92,13 @@ hr {
 }
 
 h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     text-align: center;
     line-height: 26px;
+    margin: 30px 0;
+    text-shadow: #000 2px 2px;
+    text-shadow: #7e226e 2px 2px;
+    color: rgb(142, 141, 207);
 }
 
 h2 {
@@ -156,7 +171,7 @@ tr:nth-child(even) {
 }
 .aIzquierda {
     position: absolute;
-    left: -210px;
+    left: -240px;
     top: 0;
     transition: 1s;
 }
@@ -169,8 +184,8 @@ tr:nth-child(even) {
 .bar {
     background-color: #000;
     color: #fff;
-    width: 220px;
-    width: 244px;
+    /* width: 220px; */
+    width: 274px;
     position: fixed;
     z-index: 1;
     border-bottom-right-radius: 10px;
@@ -194,9 +209,20 @@ tr:nth-child(even) {
     list-style: none;
     background-color: #000;
     position: fixed;
+    height: 100vh;
     z-index: 1;
     top: 38px;
     overflow-y: scroll;
+}
+
+.lista-general::-webkit-scrollbar {
+    width: 10px;
+}
+.lista-general::-webkit-scrollbar-thumb {
+    background-color: var(--rosa);
+    height: 10px;
+    border-radius: 10px;
+    border: 2px solid purple;
 }
 
 .lista-general > li > a {
@@ -219,7 +245,7 @@ tr:nth-child(even) {
 
 .fondo-texto {
     background-color: var(--violeta);
-    color: #fff;
+    color: #4ff33a;
     font-family: fondo-texto;
     padding: 15px;
     border-radius: 10px;
@@ -264,7 +290,7 @@ tr:nth-child(even) {
     overflow: hidden;
     position: relative;
     height: 70px;
-    margin-top: 45px;
+    margin-top: 25px;
 }
 .boton-prox {
     display: inline-block;
@@ -314,19 +340,10 @@ body::-webkit-scrollbar {
     width: 10px;
 }
 body::-webkit-scrollbar-thumb {
-    background-color: rgb(0, 0, 0, 0.8);
+    background-color: var(--rosa);
     height: 10px;
     border-radius: 10px;
-    border: 1px solid violet;
-}
-
-.lista-general::-webkit-scrollbar {
-    width: 10px;
-}
-.lista-general::-webkit-scrollbar-thumb {
-    background-color: rgba(55, 45, 87, 0.5);
-    height: 10px;
-    border-radius: 10px;
+    border: 2px solid purple;
 }
 
 .cont-foco {
@@ -389,4 +406,44 @@ button:hover {
     color: var(--blanco);
     padding: 0.5rem;
     border-radius: 10px;
+}
+
+.encuadre {
+    border: 2px solid;
+    padding: 16px 16px 0;
+    margin: 10px 0;
+}
+
+.caja-enunciado {
+    display: flex;
+}
+
+.enunciadoIz,
+.enunciadoDe {
+    width: 50%;
+}
+
+@media only screen and (min-width: 900px) {
+    .enunciadoIz {
+        width: 40%;
+    }
+
+    .enunciadoDe {
+        width: 60%;
+    }
+}
+
+.enunciadoIz > a,
+.enunciadoDe > a {
+    display: inline-block;
+    line-height: 1.375rem;
+}
+
+.caja-enunciado div a {
+    color: rgb(248, 171, 3);
+    font-family: text-enunciado;
+}
+
+.caja-enunciado div a:hover {
+    color: #fff;
 }
