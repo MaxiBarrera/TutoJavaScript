@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/javaScript.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../style/1-estilos-generales.css" />
+        <title>Eventos de JavaScript</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aIzquierda">
+                <div class="bar">
+                    <h3 style="padding: 5px 0 5px 20px">Tutorial de JS <i style="margin-left: 96px" class="fa-solid fa-bars"></i></h3>
+                </div>
+
+                <ul class="lista-general">
+                    <li class="no-check">
+                        <a href="../index.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Introducción a JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/1-aDondeIr.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> A donde ir</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/2-salidaJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Salida de JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/3-DeclaracionesJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Declaraciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/4-sinraxisJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Sintaxis JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/5-comentarios.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Comentarios JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/6-variables.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Variables JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/7-let.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Let JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/8-const.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Const JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/9-operadoresJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Operadores JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/10-aritmetica.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Aritmética JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/11-asignacion.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Asignación JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/12-tiposDeDatos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Tipos de datos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/13-funciones.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Funciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/14-objetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/15-propiedadesObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Propiedades de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/16-metodoDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Métodos de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/17-visualizacionDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Visualización de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/18-constructoresDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Constructores de objetos JS</a>
+                    </li>
+                    <li class="check">
+                        <a href="../html/19-eventos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle-check"></i> Eventos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/20-cadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Strings JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/21-metodosCadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Métodos de Strings JS</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <aside class="aDerecha">
+                <h1>Eventos de JavaScript</h1>
+
+                <div class="caja-antProx">
+                    <a href="../html/18-constructoresDeObjetos.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="../html/20-cadenas.html" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+
+                <hr />
+
+                <p>Los eventos HTML son <strong>"cosas"</strong> que les suceden a los elementos HTML.</p>
+
+                <p>Cuando se utiliza JavaScript en páginas HTML, JavaScript puede <strong>"reaccionar"</strong> a estos eventos.</p>
+
+                <hr />
+
+                <h2>Eventos HTML</h2>
+
+                <p>Un evento HTML puede ser algo que hace el navegador o algo que hace un usuario.</p>
+
+                <p>A continuación se muestran algunos ejemplos de eventos HTML:</p>
+
+                <br />
+
+                <ul class="ul-ej">
+                    <li>Se terminó de cargar una página web HTML</li>
+                    <li>Se modificó un campo de entrada HTML</li>
+                    <li>Se hizo clic en un botón HTML</li>
+                </ul>
+
+                <br />
+
+                <p>A menudo, cuando ocurren acontecimientos, es posible que desees hacer algo.</p>
+
+                <p>JavaScript le permite ejecutar código cuando se detectan eventos.</p>
+
+                <p>HTML permite que se agreguen atributos de controlador de eventos, <strong>con código JavaScript , a elementos HTML</strong>.</p>
+
+                <p>Entre comillas simples:</p>
+
+                <div class="encuadre">
+                    <pre>
+&lt;;<span class="rojo">element</span> <span class="purpura">event</span><span class="verde">='some JavaScript'</span>&gt;                        
+                    </pre>
+                </div>
+
+                <p>Entre comillas dobles:</p>
+
+                <div class="encuadre">
+                    <pre>
+&lt;;<span class="rojo">element</span> <span class="purpura">event</span><span class="verde">="some JavaScript"</span>&gt;                        
+                    </pre>
+                </div>
+
+                <p>En el siguiente ejemplo, <span class="rojo">onclick</span> se agrega un atributo (con código) a un <span class="rojo">&lt;button></span> elemento:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+&lt;<span class="rojo">button</span> <span class="purpura">onclick</span><span class="verde">="document.getElementById('demo').innerHTML = Date()"</span>>The time is?&lt;<span class="rojo">/button</span>>                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick1" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>En el ejemplo anterior, el código JavaScript cambia el contenido del elemento con id="demo".</p>
+
+                <p>En el siguiente ejemplo, el código cambia el contenido de su propio elemento (usando <span class="rojo">this.innerHTML</span>):</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+&lt;<span class="rojo">button</span> <span class="purpura">onclick</span><span class="verde">="this.innerHTML = Date()"</span>>The time is?&lt;<span class="rojo">/button</span>>                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <p>El código JavaScript suele tener varias líneas de longitud. Es más habitual ver atributos de eventos que invocan funciones:</p>
+                </div>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+&lt;<span class="rojo">button</span> <span class="purpura">onclick</span>=<span class="verde">"displayDate()"</span>&gt;The time is?&lt;<span class="rojo">/button</span>>                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_events1" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <button onclick="datoTiempo()">Datos del tiempo</button>
+
+                <p id="tiempo"></p>
+
+                <script>
+                    function datoTiempo() {
+                        document.getElementById("tiempo").innerHTML = Date();
+                    }
+                </script>
+
+                <hr />
+
+                <h2>Eventos HTML comunes</h2>
+
+                <p>A continuación se muestra una lista de algunos eventos HTML comunes:</p>
+
+                <table>
+                    <tr>
+                        <th>Evento</th>
+                        <th>Descripción</th>
+                    </tr>
+
+                    <tr>
+                        <td>onchange</td>
+                        <td>Se ha cambiado un elemento HTML</td>
+                    </tr>
+
+                    <tr>
+                        <td>onclick</td>
+                        <td>El usuario hace clic en un elemento HTML</td>
+                    </tr>
+
+                    <tr>
+                        <td>onmouseover</td>
+                        <td>El usuario mueve el ratón sobre un elemento HTML</td>
+                    </tr>
+
+                    <tr>
+                        <td>onmouseout</td>
+                        <td>El usuario aleja el ratón de un elemento HTML</td>
+                    </tr>
+
+                    <tr>
+                        <td>onkeydown</td>
+                        <td>El usuario presiona una tecla del teclado</td>
+                    </tr>
+
+                    <tr>
+                        <td>onload</td>
+                        <td>El navegador ha terminado de cargar la página.</td>
+                    </tr>
+                </table>
+
+                <p>La lista es mucho más larga: <a class="vinculo-normal" href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank">W3Schools Referencia de JavaScript HTML DOM Eventos</a>.</p>
+
+                <hr />
+
+                <h2>Controladores de eventos de JavaScript</h2>
+
+                <p>Los controladores de eventos se pueden utilizar para gestionar y verificar la entrada del usuario, las acciones del usuario y las acciones del navegador:</p>
+
+                <br />
+
+                <ul class="ul-ej">
+                    <li>Cosas que se deben hacer cada vez que se carga una página</li>
+                    <li>Cosas que se deben hacer cuando se cierra la página</li>
+                    <li>Acción que debe realizarse cuando un usuario hace clic en un botón</li>
+                    <li>Contenido que debe verificarse cuando un usuario ingresa datos</li>
+                    <li>Y más...</li>
+                </ul>
+
+                <br />
+
+                <p>Se pueden utilizar muchos métodos diferentes para permitir que JavaScript trabaje con eventos:</p>
+
+                <br />
+
+                <ul class="ul-ej">
+                    <li>Los atributos de evento HTML pueden ejecutar código JavaScript directamente</li>
+                    <li>Los atributos de eventos HTML pueden llamar a funciones de JavaScript</li>
+                    <li>Puede asignar sus propias funciones de controlador de eventos a elementos HTML</li>
+                    <li>Puede evitar que se envíen o gestionen eventos</li>
+                    <li>Y más...</li>
+                </ul>
+
+                <div class="caja-antProx">
+                    <a href="../html/18-constructoresDeObjetos.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="../html/20-cadenas.html" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </aside>
+        </main>
+
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+
+        <script src="../myScript.js"></script>
+    </body>
+</html>

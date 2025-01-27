@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style/1-estilos-generales.css" />
+        <link rel="shortcut icon" href="../img/javaScript.png" type="image/x-icon" />
+        <title>Objetos de JavaScript</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aIzquierda">
+                <div class="bar">
+                    <h3 style="padding: 5px 0 5px 20px">Tutorial de JS <i style="margin-left: 96px" class="fa-solid fa-bars"></i></h3>
+                </div>
+
+                <ul class="lista-general">
+                    <li class="no-check">
+                        <a href="../index.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Introducción a JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/1-aDondeIr.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> A donde ir</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/2-salidaJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Salida de JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/3-DeclaracionesJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Declaraciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/4-sinraxisJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Sintaxis JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/5-comentarios.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Comentarios JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/6-variables.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Variables JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/7-let.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Let JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/8-const.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Const JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/9-operadoresJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Operadores JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/10-aritmetica.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Aritmética JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/11-asignacion.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Asignación JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/12-tiposDeDatos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Tipos de datos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/13-funciones.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Funciones JS</a>
+                    </li>
+                    <li class="check">
+                        <a href="../html/14-objetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle-check"></i> Objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/15-propiedadesObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Propiedades de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/16-metodoDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Métodos de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/17-visualizacionDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Visualización de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/18-constructoresDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Constructores de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/19-eventos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Eventos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/20-cadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Strings JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/21-metodosCadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Métodos de Strings JS</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <aside class="aDerecha">
+                <h1>Objetos de JavaScript</h1>
+
+                <div class="caja-antProx">
+                    <a href="../html/13-funciones.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="../html/15-propiedadesObjetos.html" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+
+                <br />
+
+                <div class="fondo-car">
+                    <h3>Objetos de la vida real</h3>
+
+                    <p>En la vida real, los objetos son cosas como: casas, autos, personas, animales o cualquier otro tema.</p>
+
+                    <p>A continuación se muestra un ejemplo de objeto de <br />automóvil:</p>
+
+                    <br />
+
+                    <table class="auto">
+                        <tr>
+                            <th>Car Object</th>
+                            <th style="padding-left: 5px">Properties</th>
+                            <th style="padding-left: 5px">Methods</th>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="4">
+                                <img style="margin: 0; padding: 0; margin-bottom: -5.5px; max-width: 100%" src="../img/coche.jpg" alt="" />
+                            </td>
+                            <td style="padding-left: 5px">car.name = Fiat</td>
+                            <td style="padding-left: 5px">car.start()</td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding-left: 5px">car.model = 500</td>
+                            <td style="padding-left: 5px">car.drive()</td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding-left: 5px">car.weight = 850kg</td>
+                            <td style="padding-left: 5px">car.brake()</td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding-left: 5px">car.color = white</td>
+                            <td style="padding-left: 5px">car.stop()</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <hr />
+
+                <h2>Propiedades del objeto</h2>
+
+                <p>Un coche real tiene propiedades como el peso y el color:</p>
+
+                <p>car.name = Fiat, car.model = 500, car.weight = 850kg, car.color = white.</p>
+
+                <p>Los objetos de automóvil tienen las mismas propiedades , pero los valores difieren de un automóvil a otro.</p>
+
+                <hr />
+
+                <h2>Métodos de objeto</h2>
+
+                <p>Un coche real tiene métodos como start y stop:</p>
+
+                <p>car.start(), car.drive(), car.brake(), car.stop().</p>
+
+                <p>Los objetos de automóvil tienen los mismos <strong>métodos</strong>, pero éstos se ejecutan en <strong>momentos diferentes</strong>.</p>
+
+                <hr />
+
+                <h2>Variables de JavaScript</h2>
+
+                <p>Las variables de JavaScript son contenedores de valores de datos.</p>
+
+                <p>Este código asigna un valor simple (Fiat) a una variable llamada car:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> car = <span class="verde">"Fiat"</span>;                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_objects_variable" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Objetos de JavaScript</h2>
+
+                <p>Los objetos también son variables, pero pueden contener muchos valores.</p>
+
+                <p>Este código asigna muchos valores (Fiat, 500, blanco) a un objeto llamado coche:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> car = {type:<span class="verde">"Fiat"</span>, model: <span class="verde">"500"</span>, color: <span class="verde">"white"</span>};                          
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_objects_object" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <div class="fondo-texto">
+                    <h2>Nota:</h2>
+
+                    <p>Es una práctica común declarar objetos con la palabra clave <span class="rosa">const</span>.</p>
+                </div>
+
+                <hr />
+
+                <h2>Definición de objeto de JavaScript</h2>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h3>Cómo definir un objeto JavaScript</h3>
+
+                    <ul class="ul-ej">
+                        <li>Uso de un objeto literal</li>
+                        <li>Usando la palabra clave <span class="rosa">new</span></li>
+                        <li>Uso de un constructor de objetos</li>
+                    </ul>
+                </div>
+
+                <hr />
+
+                <h2>Literal de objeto de JavaScript</h2>
+
+                <p>Un objeto literal es una lista de pares nombre:valor dentro de llaves {}.</p>
+
+                <br />
+
+                <p style="border: 2px solid; padding: 10px; font-family: fondo-texto">{firstName:<span class="verde">"John"</span>, lastName:<span class="verde">"Doe"</span>, age:<span class="azul">50</span>, eyeColor:<span class="verde">"blue"</span>}</p>
+
+                <hr />
+
+                <div class="fondo-texto">
+                    <h2>Nota:</h2>
+
+                    <p><strong>Los pares nombre:valor</strong> también se denominan <strong>pares clave:valor</strong>.</p>
+
+                    <p><strong>Los literales de objeto</strong> también se denominan <strong>inicializadores de objeto</strong>.</p>
+                </div>
+
+                <hr />
+
+                <h2>Creando un objeto JavaScript</h2>
+
+                <p>Estos ejemplos crean un objeto JavaScript con 4 propiedades:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplos</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="gris">// Create an Object</span>
+<span class="purpura">const</span> person = {firstName:<span class="verde">"John"</span>, lastName:<span class="verde">"Doe"</span>, age:<span class="azul">50</span>, eyeColor:<span class="verde">"blue"</span>};                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_objects_create_1" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <p>Los espacios y los saltos de línea no son importantes. Un inicializador de objeto puede abarcar varias líneas:</p>
+
+                    <br />
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="gris">// Create an Object</span>
+<span class="purpura">const</span> person = {
+  firstName:<span class="verde">"John"</span>,
+  lastName:<span class="verde">"Doe"</span>,
+  age:<span class="azul">50</span>,
+  eyeColor:<span class="verde">"blue"</span>};                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_objects_create_2" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <p>Este ejemplo crea un objeto JavaScript vacío y luego agrega 4 propiedades:</p>
+
+                    <br />
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="gris">// Create an Object</span>
+<span class="purpura">const</span> person = {};
+
+<span class="gris">// Add Properties</span>
+person.firstName = <span class="verde">"John"</span>;
+person.lastName = <span class="verde">"Doe"</span>;
+person.age = <span class="azul">50</span>;
+person.eyeColor = <span class="verde">"blue"</span>;                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_create_empty" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Usando la nueva palabra clave</h2>
+
+                <p>Este ejemplo crea un nuevo objeto JavaScript usando <span class="rojo">new Object()</span> y luego agrega 4 propiedades:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="gris">// Create an Object</span>
+<span class="purpura">const</span> person = <span class="purpura">new</span> Object();
+
+<span class="gris">// Add Properties</span>
+person.firstName = <span class="verde">"John"</span>;
+person.lastName = <span class="verde">"Doe"</span>;
+person.age = <span class="azul">50</span>;
+person.eyeColor = <span class="verde">"blue"</span>;                         
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_create_new" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota:</h2>
+
+                    <p>Los ejemplos anteriores hacen exactamente lo mismo.</p>
+
+                    <p>Pero no es necesario utilizar <span class="rosa">new Object()</span>.</p>
+
+                    <p>Para facilitar la lectura, simplicidad y velocidad de ejecución, utilice el método <strong>literal de objeto</strong>.</p>
+                </div>
+
+                <hr />
+
+                <h2>Propiedades del objeto</h2>
+
+                <p>Los <strong>valores nombrados</strong>, en los objetos de JavaScript, se denominan <strong>propiedades</strong>.</p>
+
+                <br />
+
+                <table>
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Valor</th>
+                    </tr>
+
+                    <tr>
+                        <td>nombre de pila</td>
+                        <td>John</td>
+                    </tr>
+
+                    <tr>
+                        <td>apellido</td>
+                        <td>Gama</td>
+                    </tr>
+
+                    <tr>
+                        <td>edad</td>
+                        <td>50</td>
+                    </tr>
+
+                    <tr>
+                        <td>color de ojos</td>
+                        <td>azul</td>
+                    </tr>
+                </table>
+
+                <br />
+
+                <p>Los objetos escritos como pares de nombre-valor son similares a:</p>
+
+                <ul class="ul-ej">
+                    <li>Matrices asociativas en PHP</li>
+                    <li>Diccionarios en Python</li>
+                    <li>Tablas hash en C</li>
+                    <li>Mapas hash en Java</li>
+                    <li>Hashes en Ruby y Perl</li>
+                </ul>
+
+                <hr />
+
+                <h2>Acceder a las propiedades de los objetos</h2>
+
+                <p>Puede acceder a las propiedades del objeto de dos maneras:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+objectName.propertyName                            
+                        </pre>
+                    </div>
+
+                    <br />
+
+                    <div class="fondo-caja">
+                        <pre>
+objectName[<span class="verde">"propertyName"</span>]                         
+                        </pre>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplos</h3>
+                    <div class="fondo-caja">
+                        <pre>
+person.lastName;                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_objects_properties_1" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <div class="fondo-caja">
+                        <pre>
+person[<span class="verde">"lastName"</span>];                         
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_objects_properties_2" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Métodos de objetos de JavaScript</h2>
+
+                <p>Los métodos son <strong>acciones</strong> que se pueden realizar sobre objetos.</p>
+
+                <p>Los métodos son <strong>definiciones de funciones</strong> almacenadas como <strong>valores de prpiedad</strong>.</p>
+
+                <br />
+
+                <table>
+                    <tr>
+                        <th>Propiedad</th>
+                        <th>Valor de la propiedad</th>
+                    </tr>
+
+                    <tr>
+                        <td>nombre de pila</td>
+                        <td>John</td>
+                    </tr>
+
+                    <tr>
+                        <td>apellido</td>
+                        <td>Gama</td>
+                    </tr>
+
+                    <tr>
+                        <td>edad</td>
+                        <td>50</td>
+                    </tr>
+
+                    <tr>
+                        <td>color de ojos</td>
+                        <td>azul</td>
+                    </tr>
+
+                    <tr>
+                        <td>nombre completo</td>
+                        <td>función() {devuelve este.nombre + " " + este.apellido;}</td>
+                    </tr>
+                </table>
+
+                <hr />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> person = {
+  firstName: <span class="verde">"John"</span>,
+  lastName : <span class="verde">"Doe"</span>,
+  id       : <span class="azul">5566</span>,
+  fullName : <span class="purpura">function</span>() {
+    <span class="purpura">return this</span>.firstName + <span class="verde">" "</span> + <span class="purpura">this</span>.lastName;
+  }
+};                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_method" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>En el ejemplo anterior, <span class="rojo">this</span> se refiere al <strong>objeto persona</strong>:</p>
+
+                <p><strong>this.firstName</strong> significa la propiedad <strong>firstName de la persona</strong>.</p>
+
+                <p><strong>this.lastName</strong> significa la propiedad <strong>lastName de la persona</strong>.</p>
+
+                <hr />
+
+                <h2>En JavaScript, los objetos son el rey.</h2>
+
+                <p>Si entiendes los objetos, entiendes JavaScript.</p>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <p><strong>Los objetos</strong> son contenedores de <strong>propiedades</strong> y <strong>métodos</strong>.</p>
+
+                    <p><strong>Las propiedades</strong> se denominan <strong>Valores</strong>.</p>
+
+                    <p><strong>Los métodos</strong> son <strong>funciones</strong> almacenadas como <strong>propiedades</strong>.</p>
+
+                    <p><strong>Las propiedades</strong> pueden ser valores primitivos, funciones o incluso otros objetos.</p>
+                </div>
+
+                <br />
+
+                <p>En JavaScript, casi "todo" es un objeto.</p>
+
+                <ul class="ul-ej">
+                    <li>Los objetos son objetos</li>
+                    <li>Las matemáticas son objetos</li>
+                    <li>Las funciones son objetos</li>
+                    <li>Las fechas son objetos</li>
+                    <li>Las matrices son objetos</li>
+                    <li>Los mapas son objetos</li>
+                    <li>Los conjuntos son objetos</li>
+                </ul>
+
+                <p>Todos los valores de JavaScript, excepto los primitivos, son objetos.</p>
+
+                <hr />
+
+                <h2>Primitivos de JavaScript</h2>
+
+                <p>Un <strong>valor primitivo</strong> es un valor que no tiene propiedades ni métodos.</p>
+
+                <p><strong>3.14</strong> es un valor primitivo</p>
+
+                <p>Un <strong>tipo de datos primitivo</strong> son datos que tienen un valor primitivo.</p>
+
+                <p>JavaScript define 7 tipos de tipos de datos primitivos:</p>
+
+                <ul class="ul-ej">
+                    <li><span class="rojo">string</span></li>
+                    <li><span class="rojo">number</span></li>
+                    <li><span class="rojo">boolean</span></li>
+                    <li><span class="rojo">null</span></li>
+                    <li><span class="rojo">undefined</span></li>
+                    <li><span class="rojo">symbol</span></li>
+                    <li><span class="rojo">bigint</span></li>
+                </ul>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Inmutable</h2>
+
+                    <p>Los valores primitivos son inmutables (están codificados y no se pueden cambiar).</p>
+
+                    <p>Si x = 3,14, puedes cambiar el valor de x, pero no puedes cambiar el valor de 3,14.</p>
+                </div>
+
+                <br />
+
+                <table>
+                    <tr>
+                        <th>Valor</th>
+                        <th>Tipo</th>
+                        <th>Comentario</th>
+                    </tr>
+
+                    <tr>
+                        <td>"hola"</td>
+                        <td>cadena</td>
+                        <td>"hola" siempre es "hola"</td>
+                    </tr>
+
+                    <tr>
+                        <td>3.14</td>
+                        <td>número</td>
+                        <td>3.14 siempre es 3.14</td>
+                    </tr>
+
+                    <tr>
+                        <td>verdadero</td>
+                        <td>booleano</td>
+                        <td>verdadero siempre es verdadero</td>
+                    </tr>
+
+                    <tr>
+                        <td>falso</td>
+                        <td>booleano</td>
+                        <td>falso siempre es falso</td>
+                    </tr>
+
+                    <tr>
+                        <td>nulo</td>
+                        <td>nulo(objeto)</td>
+                        <td>nulo siempre es nulo</td>
+                    </tr>
+
+                    <tr>
+                        <td>indefinido</td>
+                        <td>indefinido</td>
+                        <td>indefinido siempre es indefinido</td>
+                    </tr>
+                </table>
+
+                <hr />
+
+                <h2>Los objetos de JavaScript son mutables</h2>
+
+                <p>Los objetos son mutables: se accede a ellos por referencia, no por valor.</p>
+
+                <p>Si persona es un objeto, la siguiente declaración no creará una copia de persona:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> x = person;                            
+                        </pre>
+                    </div>
+                </div>
+
+                <br />
+
+                <p>El objeto x no es una copia de la persona. El objeto x es una persona.</p>
+
+                <p>El objeto x y el objeto persona comparten la misma dirección de memoria.</p>
+
+                <p>Cualquier cambio en x también cambiará la persona:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="gris">//Create an Object</span>
+<span class="purpura">const</span> person = {
+  firstName: <span class="verde">"John"</span>,
+  lastName: <span class="verde">"Doe"</span>,
+  age:<span class="azul">50</span>, eyeColor: <span class="verde">"blue"</span> 
+}
+
+<span class="gris">// Create a copy</span>
+<span class="purpura">const</span> x = person;
+
+<span class="gris">// Change Age in both</span>
+x.age = <span class="azul">10</span>;                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_mutable" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <p id="demo"></p>
+
+                <div class="caja-antProx">
+                    <a href="../html/13-funciones.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="../html/15-propiedadesObjetos.html" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </aside>
+        </main>
+
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+
+        <script src="../myScript.js"></script>
+    </body>
+</html>

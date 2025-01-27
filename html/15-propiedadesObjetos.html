@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UFT-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../style/1-estilos-generales.css" />
+        <link rel="shortcut icon" href="../img/javaScript.png" type="image/x-icon" />
+        <title>Propiedades de objetos de JavaScript</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aIzquierda">
+                <div class="bar">
+                    <h3 style="padding: 5px 0 5px 20px">Tutorial de JS <i style="margin-left: 96px" class="fa-solid fa-bars"></i></h3>
+                </div>
+
+                <ul class="lista-general">
+                    <li class="no-check">
+                        <a href="../index.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Introducción a JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/1-aDondeIr.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> A donde ir</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/2-salidaJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Salida de JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/3-DeclaracionesJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Declaraciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/4-sinraxisJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Sintaxis JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/5-comentarios.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Comentarios JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/6-variables.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Variables JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/7-let.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Let JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/8-const.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Const JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/9-operadoresJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Operadores JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/10-aritmetica.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Aritmética JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/11-asignacion.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Asignación JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/12-tiposDeDatos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Tipos de datos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/13-funciones.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Funciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/14-objetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Objetos JS</a>
+                    </li>
+                    <li class="check">
+                        <a href="../html/15-propiedadesObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle-check"></i> Propiedades de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/16-metodoDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Métodos de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/17-visualizacionDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Visualización de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/18-constructoresDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Constructores de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/19-eventos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Eventos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/20-cadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Strings JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/21-metodosCadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Métodos de Strings JS</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <aside class="aDerecha">
+                <h1>Propiedades de objetos de JavaScript</h1>
+
+                <div class="caja-antProx">
+                    <a href="../html/14-objetos.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="../html/16-metodoDeObjetos.html" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h3>Un objeto es una colección desordenada de propiedades</h3>
+
+                    <p>Las propiedades son la parte más importante de los objetos de JavaScript.</p>
+
+                    <p>Las propiedades se pueden cambiar, agregar, eliminar y algunas son de solo lectura.</p>
+                </div>
+
+                <hr />
+
+                <h2>Acceder a las propiedades de JavaScript</h2>
+
+                <p>La sintaxis para acceder a la propiedad de un objeto es:</p>
+
+                <div class="encuadre">
+                    <pre>
+<span class="gris">// objectName.property</span>
+<span class="purpura">let</span> age = person.age;                        
+                    </pre>
+                </div>
+
+                <p>o</p>
+
+                <div class="encuadre">
+                    <pre>
+<span class="gris">// objectName["property"]</span>
+<span class="purpura">let</span> age = person.[<span class="verde">"age"</span>];                        
+                    </pre>
+                </div>
+
+                <p>o</p>
+
+                <div class="encuadre">
+                    <pre>
+<span class="gris">// objectName[expression]</span>
+<span class="purpura">let</span> age = person.[x];                        
+                    </pre>
+                </div>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+person.firstname + <span class="verde">" is "</span> + person.age + <span class="verde">" years old."</span>;                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_properties1" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <div class="fondo-caja">
+                        <pre>
+person[<span class="verde">"firstname"</span>] + <span class="verde">" is "</span> + person[<span class="verde">"age"</span>] + <span class="verde">" years old."</span>;                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_properties2" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> x = <span class="verde">"firstname"</span>;
+<span class="purpura">let</span> y = <span class="verde">"age"</span>;
+person[x] + <span class="verde">" is "</span> + person[y] + <span class="verde">" years old."</span>;                        
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_properties6" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Agregar nuevas propiedades</h2>
+
+                <p>Puedes agregar nuevas propiedades a un objeto existente simplemente dándole un valor:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+person.nationality = <span class="verde">"English"</span>;                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_properties3" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Eliminar propiedades</h2>
+
+                <p>La palabra clave <span class="rojo">delete</span> elimina una propiedad de un objeto:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> person = {
+  firstName: <span class="verde">"John"</span>,
+  lastName: <span class="verde">"Doe"</span>,
+  age: <span class="azul">50</span>,
+  eyeColor: <span class="verde">"blue"</span>
+};
+
+<span class="purpura">delete</span> person.age;                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_properties4" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>o eliminar persona["edad"];</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> person = {
+  firstName: <span class="verde">"John"</span>,
+  lastName: <span class="verde">"Doe"</span>,
+  age: <span class="azul">50</span>,
+  eyeColor: <span class="verde">"blue"</span>
+};
+
+<span class="purpura">delete</span> person[<span class="verde">"age"</span>];                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_properties5" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota:</h2>
+
+                    <p>La palabra clave <span class="rosa">delete</span> elimina tanto el valor de la propiedad como la propiedad misma.</p>
+
+                    <p>Después de la eliminación, la propiedad no se puede utilizar hasta que se vuelva a agregar.</p>
+                </div>
+
+                <hr />
+
+                <h2>Objetos anidados</h2>
+
+                <p>Los valores de propiedad de un objeto pueden ser otros objetos:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+myObj = {
+  name:<name:span class="verde">"John"</name:span>,
+  <age:span class="azul">30</age:span>,
+  myCars: {
+    car1:span.verde<name:span class="verde">"Ford"</name:span>,
+    car2:span.verde<name:span class="verde">"BMW"</name:span>,
+    car3:span.verde<name:span class="verde">"Fiat"</name:span>
+  }
+}                            
+                        </pre>
+                    </div>
+                </div>
+
+                <br />
+
+                <p>Puede acceder a objetos anidados utilizando la notación de puntos o la notación de corchetes:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+myObj.myCars.car2;                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_nested" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <div class="fondo-caja">
+                        <pre>
+myObj.myCars[<span class="verde">"car2"</span>];                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_nested2" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <div class="fondo-caja">
+                        <pre>
+myObj[<span class="verde">"myCars"</span>][<span class="verde">"car2"</span>];                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_nested3" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> p1 = <span class="verde">"myCars"</span>;
+<span class="purpura">let</span> p2 = <span class="verde">"car2"</span>;
+myObj[p1][p2];                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_object_nested4" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <div class="caja-antProx">
+                    <a href="../html/14-objetos.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="../html/16-metodoDeObjetos.html" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </aside>
+        </main>
+
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+
+        <script src="../myScript.js"></script>
+    </body>
+</html>
