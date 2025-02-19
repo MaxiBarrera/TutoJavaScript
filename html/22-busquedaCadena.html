@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/javaScript.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../style/1-estilos-generales.css" />
+        <title>JavaScript String Search</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aIzquierda">
+                <div class="bar">
+                    <h3 style="padding: 5px 0 5px 20px">Tutorial de JS <i style="margin-left: 96px" class="fa-solid fa-bars"></i></h3>
+                </div>
+
+                <ul class="lista-general">
+                    <li class="no-check">
+                        <a href="../index.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Introducción a JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/1-aDondeIr.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> A donde ir</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/2-salidaJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Salida de JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/3-DeclaracionesJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Declaraciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/4-sinraxisJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Sintaxis JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/5-comentarios.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Comentarios JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/6-variables.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Variables JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/7-let.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Let JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/8-const.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Const JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/9-operadoresJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Operadores JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/10-aritmetica.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Aritmética JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/11-asignacion.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Asignación JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/12-tiposDeDatos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Tipos de datos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/13-funciones.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Funciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/14-objetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/15-propiedadesObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Propiedades de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/16-metodoDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Métodos de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/17-visualizacionDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Visualización de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/18-constructoresDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Constructores de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/19-eventos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Eventos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/20-cadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Strings JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/21-metodosCadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Métodos de Strings JS</a>
+                    </li>
+                    <li class="check">
+                        <a href="../html/22-busquedaCadena.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle-check"></i> Búsqueda de Strings JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/23-plantillaCadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Plantillas de Strings JS</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <aside class="aDerecha">
+                <h1>JavaScript String Search</h1>
+
+                <div class="caja-antProx">
+                    <a href="../html/21-metodosCadenas.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="../html/23-plantillaCadenas.html" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Métodos de búsqueda de cadenas</h2>
+
+                    <br />
+
+                    <div class="caja-enunciado">
+                        <div class="enunciadoIz">
+                            <a href="#indexof">String indexOf()</a><br />
+                            <a href="#lastindexof">String lastIndexOf()</a><br />
+                            <a href="#search">String search()</a><br />
+                            <a href="#match">String match()</a><br />
+                        </div>
+
+                        <div class="enunciadoDe">
+                            <a href="#matchall">String matchAll()</a><br />
+                            <a href="#includes">String includes()</a><br />
+                            <a href="#startswith">String startsWith()</a><br />
+                            <a href="#endswith">String endsWith()</a><br />
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+
+                <p id="demo"></p>
+
+                <script>
+                    let texto = "Please Locate locate where 'locate' occurs!";
+
+                    let textoMetodo = texto.matchAll(/locate/gi);
+
+                    document.getElementById("demo").innerHTML = Array.from(textoMetodo);
+
+                    document.getElementById("demo").innerHTML = texto.endsWith("Locate", 13);
+                </script>
+
+                <h2 id="indexof">JavaScript String indexOf()</h2>
+
+                <p>El método <span class="rojo">indexOf()</span> devuelve el índice (posición) de la primera aparición de una cadena en una cadena, o devuelve -1 si no se encuentra la cadena:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Please locate where 'locate' occurs!"</span>;
+<span class="purpura">let</span> index = text.indexOf(<span class="verde">"locate"</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_indexof" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota</h2>
+
+                    <p>JavaScript cuenta las posiciones desde cero.</p>
+
+                    <p>0 es la primera posición en una cadena, 1 es la segunda, 2 es la tercera, ...</p>
+                </div>
+
+                <hr />
+
+                <h2 id="lastindexof">JavaScript String lastIndexOf()</h2>
+
+                <p>El método <span class="rojo">lastIndexOf()</span> devuelve el índice de la última aparición de un texto especificado en una cadena:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Please locate where 'locate' occurs!"</span>;
+<span class="purpura">let</span> index = text.lastIndexOf(<span class="verde">"locate"</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_lastindexof" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p><span class="rojo">indexOf()</span> y <span class="rojo">lastIndexOf()</span>, ambos devuelven -1 si no se encuentra el texto:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Please locate where 'locate' occurs!"</span>;
+<span class="purpura">let</span> index = text.lastIndexOf(<span class="verde">"John"</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_indexof_1" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Ambos métodos aceptan un segundo parámetro como posición inicial para la búsqueda:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Please locate where 'locate' occurs!"</span>;
+<span class="purpura">let</span> index = text.indexOf(<span class="verde">"locate"</span>, <span class="azul">15</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_indexof_2" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Los métodos <span class="rojo">lastIndexOf()</span> buscan hacia atrás (desde el final hasta el principio), es decir: si el segundo parámetro es <span class="rojo">15</span>, la búsqueda comienza en la posición 15 y busca hasta el principio de la cadena.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Please locate where 'locate' occurs!"</span>;
+<span class="purpura">let</span> index = lastIndexOf(<span class="verde">"locate"</span>, <span class="azul">15</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_lastindexof_2" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2 id="search">JavaScript String search()</h2>
+
+                <p>El método <span class="rojo">search()</span> busca una cadena (o una expresión regular) y devuelve la posición de la coincidencia:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Please locate where 'locate' occurs!"</span>;
+text.search(<span class="verde">"locate"</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_search_locate" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Please locate where 'locate' occurs!"</span>;
+text.search(<span class="amarillo">/locate/</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_search_locate2" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>¿Te diste cuenta?</h2>
+
+                <p>Los dos métodos, <span class="rojo">indexOf()</span> y <span class="rojo">search()</span>, ¿son <strong>iguales?</strong></p>
+
+                <p>¿Aceptan los mismos argumentos (parámetros) y devuelven el mismo valor?</p>
+
+                <p>Los dos métodos <strong>NO</strong> son iguales. Estas son las diferencias:</p>
+
+                <br />
+
+                <ul class="ul-ej">
+                    <li>El método <span class="rojo">search()</span> no puede tomar un segundo argumento de posición inicial.</li>
+                    <li>El método <span class="rojo">indexOf()</span> no puede tomar valores de búsqueda potentes (expresiones regulares).</li>
+                </ul>
+
+                <br />
+
+                <p>Aprenderá más sobre expresiones regulares en un capítulo posterior.</p>
+
+                <hr />
+
+                <h2 id="match">JavaScript String match()</h2>
+
+                <p>El método <span class="rojo">match()</span> devuelve una matriz que contiene los resultados de hacer coincidir una cadena con otra cadena (o una expresión regular).</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplos</h3>
+
+                    <p>Realizar una búsqueda de "ain":</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"The rain in SPAIN stays mainly in the plain"</span>;
+text.match(<span class="verde">"ain"</span>);                        
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_match" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <p>Realizar una búsqueda de "ain":</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"The rain in SPAIN stays mainly in the plain"</span>;
+text.match(<span class="amarillo">/ain/</span>);                        
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_match_regexp3" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <p>Realizar una búsqueda global de "ain":</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"The rain in SPAIN stays mainly in the plain"</span>;
+text.match(<span class="amarillo">/ain/g</span>);                        
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_match_regexp" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <p>Realice una búsqueda global sin distinción entre mayúsculas y minúsculas para "ain":</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"The rain in SPAIN stays mainly in the plain"</span>;
+text.match(<span class="amarillo">/ain/gi</span>);                        
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_match_regexp2" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota</h2>
+
+                    <p>Si una expresión regular no incluye el modificador g (búsqueda global), <span class="rosa">match()</span> devolverá solo la primera coincidencia en la cadena.</p>
+                </div>
+
+                <hr />
+
+                <h2 id="matchall">JavaScript String matchAll()</h2>
+
+                <p>El método <span class="rojo">matchAll()</span> devuelve un iterador que contiene los resultados de hacer coincidir una cadena con otra cadena (o una expresión regular).</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> iterator = text.matchAll(<span class="verde">"Cats"</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_matchall" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Si el parámetro es una expresión regular, se debe establecer el indicador global (g); de lo contrario, se lanza un TypeError.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> iterator = text.matchAll(<span class="amarillo">/Cats/g</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_matchall2" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Si desea realizar búsquedas sin distinguir entre mayúsculas y minúsculas, debe configurar el indicador de insensibilidad (i):</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> iterator = text.matchAll(<span class="amarillo">/Cats/gi</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_matchall3" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Notas</h2>
+
+                    <p><span class="rosa">matchAll()</span> Es una característica de ES2020.</p>
+
+                    <p><span class="rosa">matchAll()</span> No funciona en Internet Explorer.</p>
+                </div>
+
+                <hr />
+
+                <h2 id="includes">JavaScript String includes()</h2>
+
+                <p>El método <span class="rojo">includes()</span> devuelve verdadero si una cadena contiene un valor especificado.</p>
+
+                <p>De lo contrario, devuelve <span class="rojo">false</span>.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <p>Comprueba si una cadena incluye "mundo":</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purple">let</span> text = <span class="verde">"Hello world, welcome to the universe."</span>;
+text.includes(<span class="verde">"world"</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_includes" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <p>Comprueba si una cadena incluye "world". Comienza en la posición 12:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purple">let</span> text = <span class="verde">"Hello world, welcome to the universe."</span>;
+text.includes(<span class="verde">"world"</span>, <span class="azul">12</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_includes2" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Notes</h2>
+
+                    <p><span class="rosa">includes()</span> Es sensible a mayúsculas y minúsculas.</p>
+
+                    <p><span class="rosa">includes()</span> Es una característica de ES6.</p>
+
+                    <p><span class="rosa">includes()</span> No es compatible con Internet Explorer.</p>
+                </div>
+
+                <hr />
+
+                <h2 id="startswith">JavaScript String startsWith()</h2>
+
+                <p>El método <span class="rojo">startsWith()</span> retorna <span class="rojo">true</span> si una cadena comienza con un valor especificado.</p>
+
+                <p>De lo contrario, devuelve <span class="rojo">false</span>:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <p>Devuelve verdadero:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Hello world, welcome to the universe."</span>;
+text.startsWith(<span class="verde">"Hello"</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_startswith" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <p>Devuelve falso:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Hello world, welcome to the universe."</span>;
+text.startsWith(<span class="verde">"world"</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_startswith4" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Se puede especificar una posición de inicio para la búsqueda:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <p>Devuelve falso:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Hello world, welcome to the universe."</span>;
+text.startsWith(<span class="verde">"world"</span>, <span class="azul">5</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_startswith3" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <p>Devuelve verdadero:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Hello world, welcome to the universe."</span>;
+text.startsWith(<span class="verde">"world"</span>, <span class="azul">6</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_startswith2" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Notas</h2>
+
+                    <p><span class="rosa">startsWith()</span> Es sensible a mayúsculas y minúsculas.</p>
+
+                    <p><span class="rosa">startsWith()</span> Es una característica de ES6 .</p>
+
+                    <p><span class="rosa">startsWith()</span> No es compatible con Internet Explorer.</p>
+                </div>
+
+                <hr />
+
+                <h2 id="endswith">JavaScript String endsWith()</h2>
+
+                <p>El método <span class="rojo">endsWith()</span> retorna <span class="rojo">true</span> si una cadena termina con un valor especificado.</p>
+
+                <p>De lo contrario, devuelve <span class="rojo">false</span>:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplos</h3>
+
+                    <p>Comprueba si una cadena termina con "Doe":</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+let text = "John Doe";
+text.endsWith("Doe");                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_endswith" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <p>Comprueba si los primeros 11 caracteres de una cadena terminan con "mundo":</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+let text = "John Doe";
+text.endsWith("Doe", 11);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_endswith2" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Notas</h2>
+
+                    <p><span class="rosa">endsWith()</span> Es sensible a mayúsculas y minúsculas.</p>
+
+                    <p><span class="rosa">endsWith()</span> Es una característica de ES6 .</p>
+
+                    <p><span class="rosa">endsWith()</span> No es compatible con Internet Explorer.</p>
+                </div>
+
+                <div class="caja-antProx">
+                    <a href="../html/21-metodosCadenas.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="../html/23-plantillaCadenas.html" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </aside>
+        </main>
+
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+
+        <script src="../myScript.js"></script>
+    </body>
+</html>

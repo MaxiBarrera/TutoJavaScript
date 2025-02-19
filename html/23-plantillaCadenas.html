@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/javaScript.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../style/1-estilos-generales.css" />
+        <title>JavaScript Template Strings</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aIzquierda">
+                <div class="bar">
+                    <h3 style="padding: 5px 0 5px 20px">Tutorial de JS <i style="margin-left: 96px" class="fa-solid fa-bars"></i></h3>
+                </div>
+
+                <ul class="lista-general">
+                    <li class="no-check">
+                        <a href="../index.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Introducción a JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/1-aDondeIr.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> A donde ir</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/2-salidaJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Salida de JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/3-DeclaracionesJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Declaraciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/4-sinraxisJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Sintaxis JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/5-comentarios.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Comentarios JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/6-variables.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Variables JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/7-let.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Let JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/8-const.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Const JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/9-operadoresJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Operadores JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/10-aritmetica.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Aritmética JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/11-asignacion.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Asignación JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/12-tiposDeDatos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Tipos de datos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/13-funciones.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Funciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/14-objetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/15-propiedadesObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Propiedades de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/16-metodoDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Métodos de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/17-visualizacionDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Visualización de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/18-constructoresDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Constructores de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/19-eventos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Eventos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/20-cadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Strings JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/21-metodosCadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Métodos de Strings JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/22-busquedaCadena.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Búsqueda de Strings JS</a>
+                    </li>
+                    <li class="check">
+                        <a href="../html/23-plantillaCadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle-check"></i> Plantillas de Strings JS</a>
+                    </li>
+                </ul>
+            </aside>
+            <aside class="aDerecha">
+                <h1>JavaScript Template Strings</h1>
+
+                <div class="caja-antProx">
+                    <a href="../html/22-busquedaCadena.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Plantillas de cadenas</h2>
+
+                    <h2>Cadenas de plantillas</h2>
+
+                    <h2>Literales de plantilla</h2>
+
+                    <br />
+
+                    <p>El niño amado tiene muchos nombres</p>
+                </div>
+
+                <br />
+
+                <h2>Sintaxis de tics inversos</h2>
+
+                <p>Las <strong>cadenas de plantilla</strong> utilizan comillas invertidas (``) en lugar de comillas ("") para definir una cadena:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="amarillo">`Hello World!`</span>;                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_templates" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Citas dentro de las cadenas</h2>
+
+                <p><strong>Las cadenas de plantilla</strong> permiten comillas simples y dobles dentro de una cadena:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="amarillo">`He's often called "Johnny"`</span>;                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_templates_quotes" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Strings multilineales</h2>
+
+                <p><strong>Las cadenas de plantilla</strong> permiten cadenas multilínea:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text =
+<span class="amarillo">`The quick
+brown fox
+jumps over
+the lazy dog`</span>;                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_templates_multiline" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Interpolación</h2>
+
+                <p><strong>Las cadenas de plantilla</strong> proporcionan una forma sencilla de interpolar variables y expresiones en cadenas.</p>
+
+                <p>El método se llama interpolación de cadenas.</p>
+
+                <p>La sintaxis es:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <div class="fondo-caja">
+                        <pre>
+${...}                            
+                        </pre>
+                    </div>
+                </div>
+
+                <hr />
+
+                <h2>Sustituciones de variables</h2>
+
+                <p><strong>Las cadenas de plantilla</strong> permiten variables en cadenas:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> firstName = <span class="verde">"John"</span>;
+<span class="purpura">let</span> lastName = <span class="verde">"Doe"</span>;
+
+<span class="purpura">let</span> text = <span class="amarillo">`Welcome ${firstName}, ${lastName}!`</span>;                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_templates_variables" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <p>El reemplazo automático de variables con valores reales se llama <strong>interpolación de cadenas</strong>.</p>
+                </div>
+
+                <hr />
+
+                <h2>Sustitución de expresiones</h2>
+
+                <p><strong>Las cadenas de plantilla</strong> permiten expresiones en cadenas:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> price = <span class="azul">10</span>;
+<span class="purpura">let</span> VAT = <span class="azul">0.25</span>;
+
+<span class="purpura">let</span> total = <span class="amarillo">`Total: ${(price * (1 + VAT)).toFixed(2)}`</span>;                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_templates_expressions" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <p>El reemplazo automático de expresiones con valores reales se llama <strong>interpolación de cadenas</strong>.</p>
+                </div>
+
+                <hr />
+
+                <h2>HTML Templates</h2>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> header = <span class="verde">"Template Strings"</span>;
+<span class="purpura">let</span> tags = [<span class="verde">"template strings"</span>, <span class="verde">"javascript"</span>, <span class="verde">"es6"</span>];
+
+<span class="purpura">let</span> html = <span class="amarillo">`&lt;h2>${header}&lt;/h2>&lt;ul>`</span>;
+<span class="purpura">for</span> (<span class="purpura">const</span> x of tags) {
+  html += <span class="amarillo">`&lt;li>${x}&lt;/li>`</span>;
+}
+
+html += <span class="amarillo">`&lt;/ul&gt;`</span>;                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_templates_html" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Compatibilidad con navegadores</h2>
+
+                <p><stan class="rojo">Template Strings</stan> es una característica de ES6 (JavaScript 2015).</p>
+
+                <p>ES6 es totalmente compatible con todos los navegadores modernos desde junio de 2017:</p>
+
+                <table class="table-nav">
+                    <tr>
+                        <th>
+                            <span class="azul"><i class="fa-brands fa-chrome"></i></span>
+                        </th>
+                        <th>
+                            <span class="azul"><i class="fa-brands fa-edge"></i></span>
+                        </th>
+                        <th>
+                            <span class="azul"><i class="fa-brands fa-firefox-browser"></i></span>
+                        </th>
+                        <th>
+                            <span class="azul"><i class="fa-solid fa-compass"></i></span>
+                        </th>
+                        <th>
+                            <span class="azul"><i class="fa-brands fa-opera"></i></span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Chrome 51</td>
+                        <td>Edge 15</td>
+                        <td>Firefox 54</td>
+                        <td>Safari 10</td>
+                        <td>Opera 38</td>
+                    </tr>
+                    <tr>
+                        <td>May, 2016</td>
+                        <td>Apr, 2017</td>
+                        <td>Jun, 2017</td>
+                        <td>Sep, 2016</td>
+                        <td>Jun, 2016</td>
+                    </tr>
+                </table>
+
+                <p><span class="rojo">Template Strings</span> no son compatibles con Internet Explorer.</p>
+
+                <!-- ================================= -->
+
+                <div class="caja-antProx">
+                    <a href="../html/22-busquedaCadena.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </aside>
+        </main>
+
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+
+        <script src="../myScript.js"></script>
+    </body>
+</html>

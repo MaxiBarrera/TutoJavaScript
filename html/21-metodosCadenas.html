@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="../img/javaScript.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../style/1-estilos-generales.css" />
+        <title>Métodos de cadena de JavaScript</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aIzquierda">
+                <div class="bar">
+                    <h3 style="padding: 5px 0 5px 20px">Tutorial de JS <i style="margin-left: 96px" class="fa-solid fa-bars"></i></h3>
+                </div>
+
+                <ul class="lista-general">
+                    <li class="no-check">
+                        <a href="../index.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Introducción a JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/1-aDondeIr.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> A donde ir</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/2-salidaJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Salida de JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/3-DeclaracionesJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Declaraciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/4-sinraxisJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Sintaxis JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/5-comentarios.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Comentarios JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/6-variables.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Variables JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/7-let.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Let JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/8-const.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Const JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/9-operadoresJs.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Operadores JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/10-aritmetica.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Aritmética JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/11-asignacion.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Asignación JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/12-tiposDeDatos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Tipos de datos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/13-funciones.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Funciones JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/14-objetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/15-propiedadesObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Propiedades de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/16-metodoDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Métodos de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/17-visualizacionDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Visualización de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/18-constructoresDeObjetos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Constructores de objetos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/19-eventos.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Eventos JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/20-cadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Strings JS</a>
+                    </li>
+                    <li class="check">
+                        <a href="../html/21-metodosCadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle-check"></i> Métodos de Strings JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/22-busquedaCadena.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Búsqueda de Strings JS</a>
+                    </li>
+                    <li class="no-check">
+                        <a href="../html/23-plantillaCadenas.html"> &nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-regular fa-circle"></i> Plantillas de Strings JS</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <aside class="aDerecha">
+                <h1>Métodos de Strings JS</h1>
+
+                <div class="caja-antProx">
+                    <a href="../html/20-cadenas.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="../html/22-busquedaCadena.html" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Métodos básicos de cadenas</h2>
+
+                    <p>Las cadenas de Javascript son primitivas e inmutables: todos los métodos de cadena producen una nueva cadena sin alterar la cadena original.</p>
+
+                    <br />
+
+                    <div class="caja-enunciado">
+                        <div class="enunciadoIz">
+                            <a href="#length">String length</a><br />
+                            <a href="#charat">String charAt()</a><br />
+                            <a href="#charcodeat">String charCodeAt()</a><br />
+                            <a href="#at">String at()</a><br />
+                            <a href="#corchete">String [ ]</a><br />
+                            <a href="#slice">String slice()</a><br />
+                            <a href="#substring">String substring()</a><br />
+                            <a href="#substr">String substr()</a><br />
+                            <a href="#toupper">String toUpperCase()</a><br />
+                            <a href="#tolower">String toLowerCase()</a><br />
+                        </div>
+
+                        <div class="enunciadoDe">
+                            <a href="#concat">String concat()</a><br />
+                            <a href="#trim">String trim()</a><br />
+                            <a href="#trimstart">String trimStart()</a><br />
+                            <a href="#trimend">String trimEnd()</a><br />
+                            <a href="#padstart">String padStart()</a><br />
+                            <a href="#padend">String padEnd()</a><br />
+                            <a href="#repeat">String repeat()</a><br />
+                            <a href="#replace">String replace()</a><br />
+                            <a href="#replaceall">String replaceAll()</a><br />
+                            <a href="#split">String split()</a><br />
+                        </div>
+                    </div>
+                </div>
+
+                <hr />
+
+                <h2 id="length">JavaScript String Length</h2>
+
+                <p>La propiedad <span class="rojo">length</span> devuelve la longitud de una cadena:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"ABCDEFGHIJKLMNOPQRSTUVWXYZ"</span>;
+<span class="purpura">let</span> length = text.length;                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_length" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Extracción de caracteres de String</h2>
+
+                <p>Hay 4 métodos para extraer caracteres de string:</p>
+
+                <br />
+
+                <ul class="ul-ej">
+                    <li>El método <span class="rojo">at(position)</span></li>
+                    <li>El método <span class="rojo">charAt(position)</span></li>
+                    <li>El método <span class="rojo">charCodeAt(position)</span></li>
+                    <li>Uso del acceso a la propiedad [] como en las matrices</li>
+                </ul>
+
+                <hr />
+
+                <h2 id="charat">JavaScript String charAt()</h2>
+
+                <p>El método <span class="rojo">charAt()</span> devuelve el carácter en un índice (posición) especificado en una cadena:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"HELLO WORLD"</span>;
+<span class="purpura">let char</span> = text.charAt(<span class="azul">0</span>);                           
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_charat" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2 id="charcodeat">JavaScript String charCodeAt()</h2>
+
+                <p>El método <span class="rojo">charCodeAt()</span> devuelve el código del carácter en un índice especificado en una cadena:</p>
+
+                <p>El método devuelve un código UTF-16 (un entero entre 0 y 65535).</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"HELLO WORLD"</span>;
+<span class="purpura">let char</span> = text.charCodeAt(<span class="azul">0</span>);                          
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_charcodeat" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2 id="at">JavaScript String at()</h2>
+
+                <p>ES2022 introdujo el método de cadena <span class="rojo">at()</span>:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <p>Obtener la tercera letra del nombre:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> name = <span class="verde">"W3Schools"</span>;
+<span class="purpura">let</span> letter = name.at(<span class="azul">2</span>);                           
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_at" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <p>Obtener la tercera letra del nombre:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">const</span> name = <span class="verde">"W3Schools"</span>;
+<span class="purpura">let</span> letter = name.at[<span class="azul">2</span>];                         
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_at2" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>El método <span class="rojo">at()</span> devuelve el carácter en un índice (posición) especificado en una cadena.</p>
+
+                <p>El método <span class="rojo">at()</span> es compatible con todos los navegadores modernos desde marzo de 2022:</p>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota</h2>
+
+                    <p>El método <span class="rosa">at()</span> es una nueva incorporación a JavaScript.</p>
+
+                    <p>Permite el uso de índices negativos mientras que <span class="rosa">charAt()</span> no.</p>
+
+                    <p>Ahora puedes utilizar <span class="rosa">myString.at(-2)</span> en lugar <span class="rosa">de charAt(myString.length-2)</span>.</p>
+                </div>
+
+                <br />
+
+                <h2>Compatibilidad con navegadores</h2>
+
+                <p><span class="rojo">at()</span> es una característica ES2022</p>
+
+                <p>JavaScript 2022 (ES2022) es compatible con todos los navegadores modernos desde marzo de 2023:</p>
+
+                <br />
+
+                <table class="navegadores">
+                    <tr>
+                        <th class="nave"><i class="fa-brands fa-chrome"></i></th>
+                        <th class="nave"><i class="fa-brands fa-edge"></i></th>
+                        <th class="nave"><i class="fa-brands fa-firefox-browser"></i></th>
+                        <th class="nave"><i class="fa-brands fa-safari"></i></th>
+                        <th class="nave"><i class="fa-brands fa-opera"></i></th>
+                    </tr>
+
+                    <tr>
+                        <td>Chrome 94</td>
+                        <td>Edge 94</td>
+                        <td>Firefox 93</td>
+                        <td>Safari 16.4</td>
+                        <td>Opera 79</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sep 2021</td>
+                        <td>Sep 2021</td>
+                        <td>Oct 2021</td>
+                        <td>Mar 2023</td>
+                        <td>Oct 2021</td>
+                    </tr>
+                </table>
+
+                <hr />
+
+                <h2 id="corchete">Property Access [ ]</h2>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"HELLO WORLD"</span>;
+<span class="purpura">let char</span> = text[<span class="azul">0</span>];                          
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_prop" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota</h2>
+
+                    <p>El acceso a la propiedad puede ser un poco <strong>impredecible</strong>:</p>
+
+                    <br />
+
+                    <ul class="ul-ej">
+                        <li>Hace que los strings parezcan arrays (pero no lo son)</li>
+                        <li>Si no se encuentra ningún carácter, [ ] devuelve indefinido, mientras que charAt() devuelve una cadena vacía.</li>
+                        <li>Es de solo lectura. str[0] = "A" no genera ningún error (¡pero no funciona!)</li>
+                    </ul>
+                </div>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"HELLO WORLD"</span>;
+text[<span class="azul">0</span>] = <span class="verde">"A"</span>;    <span class="gris">// Gives no error, but does not work</span>                          
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_prop2" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Extracción de partes de un string</h2>
+
+                <p>Hay 3 métodos para extraer una parte de una cadena:</p>
+
+                <ul class="ul-ej">
+                    <li><span class="rojo">slice(start, end)</span></li>
+                    <li><span class="rojo">substring(start, end)</span></li>
+                    <li><span class="rojo">substr(start, length)</span></li>
+                </ul>
+
+                <hr />
+
+                <h2 id="slice">JavaScript String slice()</h2>
+
+                <p><span class="rojo">slice()</span> extrae una parte de una cadena y devuelve la parte extraída en una nueva cadena.</p>
+
+                <p>El método toma 2 parámetros: posición inicial y posición final (final no incluido).</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <p>Cortar una porción de una cuerda desde la posición 7 a la posición 13:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Apple, Banana, Kiwi"</span>;
+<span class="purpura">let</span> part = text.slice(<span class="azul">7</span>, <span class="azul">13</span>);                         
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_slice" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota</h2>
+
+                    <p>JavaScript cuenta las posiciones desde cero.</p>
+
+                    <p>la primera posición es cero.</p>
+
+                    <p>la segunda posición es 1.</p>
+                </div>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <p>Si omite el segundo parámetro, el método eliminará el resto de la cadena:</p>
+
+                    <br />
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Apple, Banana, Kiwi"</span>;
+<span class="purpura">let</span> part = text.slice(<span class="azul">7</span>);                         
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_slice_rest" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <p>Si un parámetro es negativo, la posición se cuenta desde el final de la cadena:</p>
+
+                    <br />
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Apple, Banana, Kiwi"</span>;
+<span class="purpura">let</span> part = text.slice(-<span class="azul">12</span>);                         
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_slice_rest_negative" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <p>Este ejemplo corta una porción de una cadena desde la posición -12 a la posición -6:</p>
+
+                    <br />
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Apple, Banana, Kiwi"</span>;
+<span class="purpura">let</span> part = text.slice(-<span class="azul">12</span>, - <span class="azul">6</span>);                         
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_slice_negative" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2 id="substring">JavaScript String substring()</h2>
+
+                <p><span class="rojo">substring()</span> es similar a <span class="rojo">slice()</span>.</p>
+
+                <p>La diferencia es que los valores inicial y final menores que 0 se tratan como 0 en <span class="rojo">substring()</span>.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> str = <span class="verde">"Apple, Banana, Kiwi"</span>;
+<span class="purpura">let</span> part = str.substring(<span class="azul">7</span>, <span class="azul">13</span>);                         
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_substring" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Si omite el segundo parámetro, <span class="rojo">substring()</span> se eliminará el resto de la cadena.</p>
+
+                <hr />
+
+                <h2 id="substr">JavaScript String substr()</h2>
+
+                <p><span class="rojo">substr()</span> es similar a <span class="rojo">slice()</span>.</p>
+
+                <p>La diferencia es que el segundo parámetro especifica la <span class="rojo">longitud</span> de la parte extraída.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> str = <span class="verde">"Apple, Banana, Kiwi"</span>;
+<span class="purpura">let</span> part = str.substr(<span class="azul">7</span>, <span class="azul">6</span>);                         
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_substr" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Si omite el segundo parámetro, <span class="rojo">substr()</span> se eliminará el resto de la cadena.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> str = <span class="verde">"Apple, Banana, Kiwi"</span>;
+<span class="purpura">let</span> part = str.substr(<span class="azul">7</span>);                         
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_substr1" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Si el primer parámetro es negativo, la posición cuenta desde el final de la cadena.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> str = <span class="verde">"Apple, Banana, Kiwi"</span>;
+<span class="purpura">let</span> part = str.substr(<span class="azul">-4</span>);                         
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_substr2" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2>Converting to Upper and Lower Case</h2>
+
+                <p>Una cadena se convierte en mayúsculas con <span class="rojo">toUpperCase()</span>:</p>
+
+                <p>Una cadena se convierte en minúsculas con <span class="rojo">toLowerCase()</span>:</p>
+
+                <hr />
+
+                <h2 id="toupper">JavaScript String toUpperCase()</h2>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text1 = <span class="verde">"Hello World!"</span>;
+<span class="purpura">let</span> text2 = text1.toUpperCase();                         
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_toupper" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2 id="tolower">JavaScript String toLowerCase()</h2>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text1 = <span class="verde">"Hello World!"</span>;       <span class="gris">// String</span>
+<span class="purpura">let</span> text2 = text1.toLowerCase();  <span class="gris">// text2 is text1 converted to lower</span>                        
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_tolower" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2 id="concat">JavaScript String concat()</h2>
+
+                <p><span class="rojo">concat()</span> une dos o más cadenas:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text1 = <span class="verde">"Hello"</span>;
+<span class="purpura">let</span> text2 = <span class="verde">"World"</span>;
+<span class="purpura">let</span> text3 = text1.concat(<span class="verde">" "</span>, text2);                   
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_concat" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>El método <span class="rojo">concat()</span> se puede utilizar en lugar del operador más. Estas dos líneas hacen lo mismo:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+text = <span class="verde">"Hello"</span> + <span class="verde">" "</span> + <span class="verde">"World!"</span>;
+text = <span class="verde">"Hello"</span>.concat(<span class="verde">" "</span>, <span class="verde">"World!"</span>);                   
+                        </pre>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota</h2>
+
+                    <p>Todos los metódos de cadena devuelven una nueva cadena. No modifican la cadena original</p>
+
+                    <p>Formally said:</p>
+
+                    <p>Las cadenas son inmutables: las cadenas no se pueden cambiar, solo reemplazar.</p>
+                </div>
+
+                <hr />
+
+                <h2 id="trim">JavaScript String trim()</h2>
+
+                <p>El método <span class="rojo">trim()</span> elimina los espacios en blanco de ambos lados de una cadena:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text1 = <span class="verde">"      Hello World!      "</span>;
+<span class="purpura">let</span> text2 = text1.trim();                   
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_trim" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2 id="trimstart">JavaScript String trimStart()</h2>
+
+                <p>ECMAScript 2019 agregó el método String <span class="rojo">trimStart()</span> a JavaScript.</p>
+
+                <p>El método <span class="rojo">trimStart()</span> funciona como trim(), pero elimina los espacios en blanco sólo desde el comienzo de una cadena.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text1 = <span class="verde">"      Hello World!      "</span>;
+<span class="purpura">let</span> text2 = text1.trimStart();                   
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_trimstart" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>La cadena JavaScript <span class="rojo">trimStart()</span> es compatible con todos los navegadores modernos desde enero de 2020:</p>
+
+                <table class="navegadores">
+                    <tr>
+                        <th class="nave"><i class="fa-brands fa-chrome"></i></th>
+                        <th class="nave"><i class="fa-brands fa-edge"></i></th>
+                        <th class="nave"><i class="fa-brands fa-firefox-browser"></i></th>
+                        <th class="nave"><i class="fa-brands fa-safari"></i></th>
+                        <th class="nave"><i class="fa-brands fa-opera"></i></th>
+                    </tr>
+
+                    <tr>
+                        <td>Chrome 66</td>
+                        <td>Edge 79</td>
+                        <td>Firefox 61</td>
+                        <td>Safari 12</td>
+                        <td>Opera 59</td>
+                    </tr>
+
+                    <tr>
+                        <td>Apr 2018</td>
+                        <td>Jan 2020</td>
+                        <td>Jun 2018</td>
+                        <td>Sep 2018</td>
+                        <td>May 2018</td>
+                    </tr>
+                </table>
+
+                <hr />
+
+                <h2 id="trimend">JavaScript String trimEnd()</h2>
+
+                <p>ECMAScript 2019 agregó el método de cadena <span class="rojo">trimEnd()</span> a JavaScript.</p>
+
+                <p>El <span class="rojo">trimEnd()</span> método funciona como <span class="rojo">trim()</span>, pero elimina los espacios en blanco sólo del final de una cadena.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text1 = <span class="verde">"      Hello World!      "</span>;
+<span class="purpura">let</span> text2 = text1.trimEnd();                   
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_trimend" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>La cadena JavaScript <span class="rojo">trimEnd()</span> es compatible con todos los navegadores modernos desde enero de 2020:</p>
+
+                <table class="navegadores">
+                    <tr>
+                        <th class="nave"><i class="fa-brands fa-chrome"></i></th>
+                        <th class="nave"><i class="fa-brands fa-edge"></i></th>
+                        <th class="nave"><i class="fa-brands fa-firefox-browser"></i></th>
+                        <th class="nave"><i class="fa-brands fa-safari"></i></th>
+                        <th class="nave"><i class="fa-brands fa-opera"></i></th>
+                    </tr>
+
+                    <tr>
+                        <td>Chrome 66</td>
+                        <td>Edge 79</td>
+                        <td>Firefox 61</td>
+                        <td>Safari 12</td>
+                        <td>Opera 50</td>
+                    </tr>
+
+                    <tr>
+                        <td>Apr 2018</td>
+                        <td>Jan 2020</td>
+                        <td>Jun 2018</td>
+                        <td>Sep 2018</td>
+                        <td>May 2018</td>
+                    </tr>
+                </table>
+
+                <hr />
+
+                <h2>JavaScript String Padding</h2>
+
+                <p>ECMAScript 2017 agregó dos nuevos métodos de cadena a JavaScript: <span class="rojo">padStart()</span> y <span class="rojo">padEnd()</span> para admitir el relleno al principio y al final de una cadena.</p>
+
+                <hr />
+
+                <h2 id="padstart">JavaScript String padStart()</h2>
+
+                <p>El método <span class="rojo">padStart()</span> rellena una cadena desde el principio.</p>
+
+                <p>Rellena una cadena con otra cadena (varias veces) hasta que alcanza una longitud determinada.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <p>Rellene una cadena con "0" hasta que alcance la longitud 4:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"5"</span>;
+<span class="purpura">let</span> padded = text.padStart(4,"0");                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_padding1" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <p>Rellene una cadena con "x" hasta que alcance la longitud 4:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"5"</span>;
+<span class="purpura">let</span> padded = text.padStart(4,"x");                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_padding4" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota</h2>
+
+                    <p>El método <span class="rosa">padStart()</span> es un método de cadena.</p>
+
+                    <p>Para rellenar un número, primero convierta el número en una cadena.</p>
+
+                    <p>Vea el ejemplo a continuación.</p>
+                </div>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> numb = <span class="azul">5</span>;
+<span class="purpura">let</span> text = numb.toString();
+<span class="purpura">let</span> padded = text.padStart(<span class="azul">4</span>,<span class="verde">"0"</span>);                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_padding3" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <h2>Compatibilidad con navegadores</h2>
+
+                <p><span class="rojo">padStart()</span> es una característica de ECMAScript 2017.</p>
+
+                <p>ES2017 es compatible con todos los navegadores modernos desde septiembre de 2017:</p>
+
+                <table class="navegadores">
+                    <tr>
+                        <th class="nave"><i class="fa-brands fa-chrome"></i></th>
+                        <th class="nave"><i class="fa-brands fa-edge"></i></th>
+                        <th class="nave"><i class="fa-brands fa-firefox-browser"></i></th>
+                        <th class="nave"><i class="fa-brands fa-safari"></i></th>
+                        <th class="nave"><i class="fa-brands fa-opera"></i></th>
+                    </tr>
+
+                    <tr>
+                        <td>Chrome 58</td>
+                        <td>Edge 15</td>
+                        <td>Firefox 52</td>
+                        <td>Safari 11</td>
+                        <td>Opera 45</td>
+                    </tr>
+
+                    <tr>
+                        <td>Apr 2017</td>
+                        <td>Apr 2017</td>
+                        <td>Mar 2017</td>
+                        <td>Sep 2017</td>
+                        <td>May 2017</td>
+                    </tr>
+                </table>
+
+                <p><span class="rojo">padStart()</span> no es compatible con Internet Explorer.</p>
+
+                <hr />
+
+                <h2 id="padend">JavaScript String padEnd()</h2>
+
+                <p>El método <span class="rojo">padEnd()</span> rellena una cadena desde el final.</p>
+
+                <p>Rellena una cadena con otra cadena (varias veces) hasta que alcanza una longitud determinada.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"5"</span>;
+<span class="purpura">let</span> padded = text.padEnd(4,"0");                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_padding2" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br />
+                    <br />
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"5"</span>;
+<span class="purpura">let</span> padded = text.padEnd(4,"x");                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_padding6" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota</h2>
+
+                    <p>El método <span class="rosa">padEnd()</span> es un método de cadena.</p>
+
+                    <p>Para rellenar un número, primero convierta el número en una cadena.</p>
+
+                    <p>Vea el ejemplo a continuación.</p>
+                </div>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> numb = <span class="azul">5</span>;
+<span class="purpura">let</span> text = numb.toString();
+<span class="purpura">let</span> padded = text.padEnd(<span class="azul">4</span>,<span class="verde">"0"</span>);                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_padding5" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <h2>Compatibilidad con navegadores</h2>
+
+                <p><span class="rojo">padEnd()</span> es una característica de ECMAScript 2017.</p>
+
+                <p>ES2017 es compatible con todos los navegadores modernos desde septiembre de 2017:</p>
+
+                <table class="navegadores">
+                    <tr>
+                        <th class="nave"><i class="fa-brands fa-chrome"></i></th>
+                        <th class="nave"><i class="fa-brands fa-edge"></i></th>
+                        <th class="nave"><i class="fa-brands fa-firefox-browser"></i></th>
+                        <th class="nave"><i class="fa-brands fa-safari"></i></th>
+                        <th class="nave"><i class="fa-brands fa-opera"></i></th>
+                    </tr>
+
+                    <tr>
+                        <td>Chrome 58</td>
+                        <td>Edge 15</td>
+                        <td>Firefox 52</td>
+                        <td>Safari 11</td>
+                        <td>Opera 45</td>
+                    </tr>
+
+                    <tr>
+                        <td>Apr 2017</td>
+                        <td>Apr 2017</td>
+                        <td>Mar 2017</td>
+                        <td>Sep 2017</td>
+                        <td>May 2017</td>
+                    </tr>
+                </table>
+
+                <p><span class="rojo">padEnd()</span> no es compatible con Internet Explorer.</p>
+
+                <hr />
+
+                <h2 id="repeat">JavaScript String repeat()</h2>
+
+                <p>El método <span class="rojo">repeat()</span> devuelve una cadena con un número de copias de una cadena.</p>
+
+                <p>El método <span class="rojo">repeat()</span> devuelve una nueva cadena.</p>
+
+                <p>El método <span class="rojo">repeat()</span> no cambia la cadena original.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <p>Crear copias de un texto:</p>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Hello world!"</span>;
+<span class="purpura">let</span> result = text.repeat(<span class="azul">2</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_repeat" target="_blank" class="boton-vinculo">Check!</a>
+
+                    <br /><br />
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Hello world!"</span>;
+<span class="purpura">let</span> result = text.repeat(<span class="azul">4</span>);                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_repeat1" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <h2>Sintaxsis</h2>
+
+                <div class="encuadre">
+                    <pre>
+string.repeat(count)                        
+                    </pre>
+                </div>
+
+                <h2>Parámetros</h2>
+
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Description</th>
+                    </tr>
+
+                    <tr>
+                        <td>contar</td>
+                        <td>Obligatorio. El número de copias que se desean.</td>
+                    </tr>
+                </table>
+
+                <h2>Valor de retorno</h2>
+
+                <table>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Descripción</th>
+                    </tr>
+
+                    <tr>
+                        <td>Cadena</td>
+                        <td>Una nueva cadena que contiene las copias.</td>
+                    </tr>
+                </table>
+
+                <hr />
+
+                <h2>Compatibilidad con navegadores</h2>
+
+                <p><span class="rojo">repeat()</span> es una característica de ES6 (JavaScript 2015).</p>
+
+                <p>ES6 es totalmente compatible con todos los navegadores modernos desde junio de 2017:</p>
+
+                <table class="navegadores">
+                    <tr>
+                        <th class="nave"><i class="fa-brands fa-chrome"></i></th>
+                        <th class="nave"><i class="fa-brands fa-edge"></i></th>
+                        <th class="nave"><i class="fa-brands fa-firefox-browser"></i></th>
+                        <th class="nave"><i class="fa-brands fa-safari"></i></th>
+                        <th class="nave"><i class="fa-brands fa-opera"></i></th>
+                    </tr>
+
+                    <tr>
+                        <td>Chrome 51</td>
+                        <td>Edge 15</td>
+                        <td>Firefox 54</td>
+                        <td>Safari 10</td>
+                        <td>Opera 38</td>
+                    </tr>
+
+                    <tr>
+                        <td>May 2016</td>
+                        <td>Apr 2017</td>
+                        <td>Jun 2017</td>
+                        <td>Sep 2016</td>
+                        <td>Jun 2016</td>
+                    </tr>
+                </table>
+
+                <p><span class="rojo">repeat()</span> no es compatible con Internet Explorer.</p>
+
+                <hr />
+
+                <h2 id="replace">Replacing String Content</h2>
+
+                <p>El método <span class="rojo">replace()</span> reemplaza un valor especificado con otro valor en una cadena:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Please visit Microsoft!"</span>;
+<span class="purpura">let</span> newText = text.replace(<span class="verde">"Microsoft"</span>, <span class="verde">"W3Schools"</span>);                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_replace" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota</h2>
+
+                    <p>El <span class="rosa">replace()</span> método no cambia la cadena en la que se llama.</p>
+
+                    <p>El <span class="rosa">replace()</span> método devuelve una nueva cadena.</p>
+
+                    <p>El <span class="rosa">replace()</span> método reemplaza <strong>solo la primera</strong> coincidencia.</p>
+
+                    <p>Si desea reemplazar todas las coincidencias, utilice una expresión regular con el indicador /g activado. Vea los ejemplos a continuación.</p>
+                </div>
+
+                <br />
+
+                <p>De forma predeterminada, el método <span class="rojo">replace()</span> reemplaza solo la primera coincidencia:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Please visit Microsoft and Microsoft!"</span>;
+<span class="purpura">let</span> newText = text.replace(<span class="verde">"Microsoft"</span>, <span class="verde">"W3Schools"</span>);                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_replace_first" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>De forma predeterminada, el método <span class="rojo">replace()</span> distingue entre mayúsculas y minúsculas. Escribir MICROSOFT (con mayúsculas) no funcionará:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Please visit Microsoft and Microsoft!"</span>;
+<span class="purpura">let</span> newText = text.replace(<span class="verde">"MICROSOFT"</span>, <span class="verde">"W3Schools"</span>);                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_replace_case" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Para reemplazar la distinción entre mayúsculas y minúsculas, utilice una expresión regular con un indicador <span class="rojo">/i</span> (sin distinción entre mayúsculas y minúsculas):</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Please visit Microsoft and Microsoft!"</span>;
+<span class="purpura">let</span> newText = text.replace(<span class="amarillo">/MICROSOFT/i</span>, <span class="verde">"W3Schools"</span>);                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_replace_insensitive" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota</h2>
+
+                    <p>Las expresiones regulares se escriben sin comillas.</p>
+                </div>
+
+                <br />
+
+                <p>Para reemplazar todas las coincidencias, use una expresión regular con una bandera <span class="rojo">/g</span> (coincidencia global):</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+<span class="purpura">let</span> text = <span class="verde">"Please visit Microsoft and Microsoft!"</span>;
+<span class="purpura">let</span> newText = text.replace(<span class="amarillo">/Microsoft/g</span>, <span class="verde">"W3Schools"</span>);                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_replace_global" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <hr />
+
+                <h2 id="replaceall">JavaScript String ReplaceAll()</h2>
+
+                <p>En 2021, JavaScript introdujo el método de cadena <span class="rojo">replaceAll()</span>:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+text = text.replaceAll(<span class="verde">"Cats"</span>,<span class="verde">"Dogs"</span>);
+text = text.replaceAll(<span class="verde">"cats"</span>,<span class="verde">"dogs"</span>);                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_replaceall" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>El método <span class="rojo">replaceAll()</span> le permite especificar una expresión regular en lugar de una cadena a reemplazar.</p>
+
+                <p>Si el parámetro es una expresión regular, se debe establecer el indicador global (g); de lo contrario, se lanza un TypeError.</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+text = text.replaceAll(<span class="amarillo">/Cats/g</span>,<span class="verde">"Dogs"</span>);
+text = text.replaceAll(<span class="amarillo">/cats/g</span>,<span class="verde">"dogs"</span>);                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_replaceall2" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Nota</h2>
+
+                    <p><span class="rosa">replaceAll()</span> es una característica de ES2021 .</p>
+
+                    <p><span class="rosa">replaceAll()</span> No funciona en Internet Explorer.</p>
+                </div>
+
+                <hr />
+
+                <h2>Convertir un string en una array</h2>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <p>Si desea trabajar con una cadena como una matriz, puede convertirla en una matriz.</p>
+                </div>
+
+                <hr />
+
+                <h2 id="split">JavaScript String split()</h2>
+
+                <p>Una cadena se puede convertir en una matriz con el método <span class="rojo">split()</span>:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+text.split(<span class="verde">","</span>)    <span class="gris">// Split on commas</span>
+text.split(<span class="verde">" "</span>)    <span class="gris">// Split on spaces</span>
+text.split(<span class="verde">"|"</span>)    <span class="gris">// Split on pipe</span>                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_split" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <p>Si se omite el separador, la matriz devuelta contendrá la cadena completa en el índice [0].</p>
+
+                <p>Si el separador es "", la matriz devuelta será una matriz de caracteres individuales:</p>
+
+                <br />
+
+                <div class="borde-caja">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-caja">
+                        <pre>
+text.split(<span class="verde">""</span>)                           
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_string_split_char" target="_blank" class="boton-vinculo">Check!</a>
+                </div>
+
+                <br />
+
+                <div class="fondo-texto">
+                    <h2>Referencia completa de cadenas</h2>
+
+                    <p>Para obtener una referencia completa de String, visite:</p>
+
+                    <p><a href="https://www.w3schools.com/jsref/jsref_obj_string.asp" target="_blank" class="vinculo-normal">Referencia completa de cadenas de JavaScript</a>.</p>
+
+                    <p>La referencia contiene descripciones y ejemplos de todas las propiedades y métodos de cadenas.</p>
+                </div>
+
+                <div class="caja-antProx">
+                    <a href="../html/20-cadenas.html" class="boton-ante"><i class="fa-solid fa-angles-left"></i>Anterior</a>
+
+                    <a href="../html/22-busquedaCadena.html" class="boton-prox">Proximo<i class="fa-solid fa-angles-right"></i></a>
+                </div>
+            </aside>
+        </main>
+
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+
+        <script src="../myScript.js"></script>
+    </body>
+</html>
