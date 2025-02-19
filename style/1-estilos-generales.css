@@ -209,7 +209,7 @@ tr:nth-child(even) {
     list-style: none;
     background-color: #000;
     position: fixed;
-    height: 100vh;
+    height: 94.8vh;
     z-index: 1;
     top: 38px;
     overflow-y: scroll;
@@ -446,4 +446,14 @@ button:hover {
 
 .caja-enunciado div a:hover {
     color: #fff;
+}
+
+.navegadores {
+    box-shadow: 0 0 3px rgb(111, 13, 131);
+}
+
+.nave {
+    text-align: center;
+    font-size: 24px;
+    color: rgb(111, 13, 131);
 }
